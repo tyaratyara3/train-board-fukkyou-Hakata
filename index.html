@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>教育大前駅 発車標</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="station-header">
+        <h1>教育大前駅（博多方面）</h1>
+        <div class="clock" id="current-clock">--:--</div>
+    </div>
+
+    <div class="board-frame">
+        <div class="board-header">
+            <span class="col-type">種別</span>
+            <span class="col-time">時刻</span>
+            <span class="col-dest">行先</span>
+            <span class="col-status">状況</span>
+        </div>
+
+        <div id="departure-list" class="departure-list">
+            <!-- JavaScriptで動的に挿入 -->
+            <div class="loading">読込中...</div>
+        </div>
+
+        <div class="scroll-message-container">
+            <div id="scroll-message" class="scroll-message">
+                只今の時間は平常通り運転しています。
+            </div>
+        </div>
+    </div>
+    <div id="last-updated" class="last-updated"></div>
+
+    <script src="script.js?v=5"></script>
+</body>
+
+</html>

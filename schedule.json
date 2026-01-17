@@ -1,0 +1,604 @@
+{
+  "station": "教育大前",
+  "direction": "博多方面",
+  "schedule": {
+    "weekday": [
+      {
+        "hour": 5,
+        "minute": 31,
+        "dest": "博多",
+        "type": "普通"
+      },
+      {
+        "hour": 5,
+        "minute": 59,
+        "dest": "博多",
+        "type": "普通"
+      },
+      {
+        "hour": 6,
+        "minute": 20,
+        "dest": "博多",
+        "type": "普通"
+      },
+      {
+        "hour": 6,
+        "minute": 41,
+        "dest": "二日市",
+        "type": "普通"
+      },
+      {
+        "hour": 6,
+        "minute": 51,
+        "dest": "久留米",
+        "type": "普通"
+      },
+      {
+        "hour": 7,
+        "minute": 6,
+        "dest": "南福岡",
+        "type": "普通"
+      },
+      {
+        "hour": 7,
+        "minute": 24,
+        "dest": "久留米",
+        "type": "普通"
+      },
+      {
+        "hour": 7,
+        "minute": 36,
+        "dest": "南福岡",
+        "type": "普通"
+      },
+      {
+        "hour": 7,
+        "minute": 45,
+        "dest": "南福岡",
+        "type": "普通"
+      },
+      {
+        "hour": 7,
+        "minute": 55,
+        "dest": "二日市",
+        "type": "普通"
+      },
+      {
+        "hour": 8,
+        "minute": 6,
+        "dest": "鳥栖",
+        "type": "普通"
+      },
+      {
+        "hour": 8,
+        "minute": 26,
+        "dest": "南福岡",
+        "type": "普通"
+      },
+      {
+        "hour": 8,
+        "minute": 39,
+        "dest": "鳥栖",
+        "type": "区"
+      },
+      {
+        "hour": 8,
+        "minute": 52,
+        "dest": "鳥栖",
+        "type": "普通"
+      },
+      {
+        "hour": 9,
+        "minute": 21,
+        "dest": "二日市",
+        "type": "区"
+      },
+      {
+        "hour": 9,
+        "minute": 46,
+        "dest": "羽犬塚",
+        "type": "区"
+      },
+      {
+        "hour": 10,
+        "minute": 17,
+        "dest": "二日市",
+        "type": "普通"
+      },
+      {
+        "hour": 10,
+        "minute": 42,
+        "dest": "鳥栖",
+        "type": "区"
+      },
+      {
+        "hour": 11,
+        "minute": 18,
+        "dest": "二日市",
+        "type": "普通"
+      },
+      {
+        "hour": 11,
+        "minute": 48,
+        "dest": "鳥栖",
+        "type": "区"
+      },
+      {
+        "hour": 12,
+        "minute": 14,
+        "dest": "二日市",
+        "type": "普通"
+      },
+      {
+        "hour": 12,
+        "minute": 47,
+        "dest": "鳥栖",
+        "type": "区"
+      },
+      {
+        "hour": 13,
+        "minute": 14,
+        "dest": "二日市",
+        "type": "普通"
+      },
+      {
+        "hour": 13,
+        "minute": 47,
+        "dest": "鳥栖",
+        "type": "区"
+      },
+      {
+        "hour": 14,
+        "minute": 14,
+        "dest": "二日市",
+        "type": "普通"
+      },
+      {
+        "hour": 14,
+        "minute": 47,
+        "dest": "鳥栖",
+        "type": "区"
+      },
+      {
+        "hour": 15,
+        "minute": 16,
+        "dest": "博多",
+        "type": "普通"
+      },
+      {
+        "hour": 15,
+        "minute": 47,
+        "dest": "久留米",
+        "type": "区"
+      },
+      {
+        "hour": 16,
+        "minute": 13,
+        "dest": "荒木",
+        "type": "普通"
+      },
+      {
+        "hour": 16,
+        "minute": 40,
+        "dest": "南福岡",
+        "type": "普通"
+      },
+      {
+        "hour": 16,
+        "minute": 54,
+        "dest": "大牟田",
+        "type": "普通"
+      },
+      {
+        "hour": 17,
+        "minute": 12,
+        "dest": "久留米",
+        "type": "区"
+      },
+      {
+        "hour": 17,
+        "minute": 52,
+        "dest": "羽犬塚",
+        "type": "区"
+      },
+      {
+        "hour": 18,
+        "minute": 16,
+        "dest": "久留米",
+        "type": "区"
+      },
+      {
+        "hour": 18,
+        "minute": 43,
+        "dest": "久留米",
+        "type": "区"
+      },
+      {
+        "hour": 19,
+        "minute": 13,
+        "dest": "荒尾(熊本県)",
+        "type": "区"
+      },
+      {
+        "hour": 19,
+        "minute": 40,
+        "dest": "二日市",
+        "type": "普通"
+      },
+      {
+        "hour": 19,
+        "minute": 59,
+        "dest": "荒木",
+        "type": "区"
+      },
+      {
+        "hour": 20,
+        "minute": 22,
+        "dest": "博多",
+        "type": "普通"
+      },
+      {
+        "hour": 20,
+        "minute": 42,
+        "dest": "二日市",
+        "type": "普通"
+      },
+      {
+        "hour": 21,
+        "minute": 2,
+        "dest": "江北(佐賀県)",
+        "type": "普通"
+      },
+      {
+        "hour": 21,
+        "minute": 27,
+        "dest": "久留米",
+        "type": "普通"
+      },
+      {
+        "hour": 21,
+        "minute": 48,
+        "dest": "二日市",
+        "type": "普通"
+      },
+      {
+        "hour": 22,
+        "minute": 10,
+        "dest": "荒尾(熊本県)",
+        "type": "区"
+      },
+      {
+        "hour": 22,
+        "minute": 25,
+        "dest": "久留米",
+        "type": "普通"
+      },
+      {
+        "hour": 22,
+        "minute": 52,
+        "dest": "久留米",
+        "type": "普通"
+      },
+      {
+        "hour": 23,
+        "minute": 8,
+        "dest": "福間",
+        "type": "普通"
+      },
+      {
+        "hour": 23,
+        "minute": 23,
+        "dest": "南福岡",
+        "type": "普通"
+      },
+      {
+        "hour": 23,
+        "minute": 42,
+        "dest": "福間",
+        "type": "普通"
+      },
+      {
+        "hour": 24,
+        "minute": 5,
+        "dest": "赤間",
+        "type": "普通"
+      }
+    ],
+    "holiday": [
+      {
+        "hour": 5,
+        "minute": 31,
+        "dest": "博多",
+        "type": "普通"
+      },
+      {
+        "hour": 5,
+        "minute": 59,
+        "dest": "博多",
+        "type": "普通"
+      },
+      {
+        "hour": 6,
+        "minute": 20,
+        "dest": "博多",
+        "type": "普通"
+      },
+      {
+        "hour": 6,
+        "minute": 41,
+        "dest": "二日市",
+        "type": "普通"
+      },
+      {
+        "hour": 6,
+        "minute": 51,
+        "dest": "久留米",
+        "type": "普通"
+      },
+      {
+        "hour": 7,
+        "minute": 6,
+        "dest": "南福岡",
+        "type": "普通"
+      },
+      {
+        "hour": 7,
+        "minute": 24,
+        "dest": "久留米",
+        "type": "普通"
+      },
+      {
+        "hour": 7,
+        "minute": 45,
+        "dest": "南福岡",
+        "type": "普通"
+      },
+      {
+        "hour": 7,
+        "minute": 55,
+        "dest": "二日市",
+        "type": "普通"
+      },
+      {
+        "hour": 8,
+        "minute": 6,
+        "dest": "鳥栖",
+        "type": "普通"
+      },
+      {
+        "hour": 8,
+        "minute": 26,
+        "dest": "南福岡",
+        "type": "普通"
+      },
+      {
+        "hour": 8,
+        "minute": 39,
+        "dest": "鳥栖",
+        "type": "区"
+      },
+      {
+        "hour": 8,
+        "minute": 52,
+        "dest": "鳥栖",
+        "type": "普通"
+      },
+      {
+        "hour": 9,
+        "minute": 21,
+        "dest": "二日市",
+        "type": "区"
+      },
+      {
+        "hour": 9,
+        "minute": 46,
+        "dest": "羽犬塚",
+        "type": "区"
+      },
+      {
+        "hour": 10,
+        "minute": 17,
+        "dest": "二日市",
+        "type": "普通"
+      },
+      {
+        "hour": 10,
+        "minute": 42,
+        "dest": "鳥栖",
+        "type": "区"
+      },
+      {
+        "hour": 11,
+        "minute": 18,
+        "dest": "二日市",
+        "type": "普通"
+      },
+      {
+        "hour": 11,
+        "minute": 48,
+        "dest": "鳥栖",
+        "type": "区"
+      },
+      {
+        "hour": 12,
+        "minute": 14,
+        "dest": "二日市",
+        "type": "普通"
+      },
+      {
+        "hour": 12,
+        "minute": 47,
+        "dest": "鳥栖",
+        "type": "区"
+      },
+      {
+        "hour": 13,
+        "minute": 14,
+        "dest": "二日市",
+        "type": "普通"
+      },
+      {
+        "hour": 13,
+        "minute": 47,
+        "dest": "鳥栖",
+        "type": "区"
+      },
+      {
+        "hour": 14,
+        "minute": 14,
+        "dest": "二日市",
+        "type": "普通"
+      },
+      {
+        "hour": 14,
+        "minute": 47,
+        "dest": "鳥栖",
+        "type": "区"
+      },
+      {
+        "hour": 15,
+        "minute": 16,
+        "dest": "博多",
+        "type": "普通"
+      },
+      {
+        "hour": 15,
+        "minute": 47,
+        "dest": "久留米",
+        "type": "区"
+      },
+      {
+        "hour": 16,
+        "minute": 13,
+        "dest": "荒木",
+        "type": "普通"
+      },
+      {
+        "hour": 16,
+        "minute": 40,
+        "dest": "南福岡",
+        "type": "普通"
+      },
+      {
+        "hour": 16,
+        "minute": 54,
+        "dest": "大牟田",
+        "type": "普通"
+      },
+      {
+        "hour": 17,
+        "minute": 12,
+        "dest": "久留米",
+        "type": "区"
+      },
+      {
+        "hour": 17,
+        "minute": 52,
+        "dest": "羽犬塚",
+        "type": "区"
+      },
+      {
+        "hour": 18,
+        "minute": 16,
+        "dest": "久留米",
+        "type": "区"
+      },
+      {
+        "hour": 18,
+        "minute": 43,
+        "dest": "久留米",
+        "type": "区"
+      },
+      {
+        "hour": 19,
+        "minute": 13,
+        "dest": "荒尾(熊本県)",
+        "type": "区"
+      },
+      {
+        "hour": 19,
+        "minute": 40,
+        "dest": "二日市",
+        "type": "普通"
+      },
+      {
+        "hour": 19,
+        "minute": 59,
+        "dest": "荒木",
+        "type": "区"
+      },
+      {
+        "hour": 20,
+        "minute": 22,
+        "dest": "博多",
+        "type": "普通"
+      },
+      {
+        "hour": 20,
+        "minute": 42,
+        "dest": "二日市",
+        "type": "普通"
+      },
+      {
+        "hour": 21,
+        "minute": 2,
+        "dest": "江北(佐賀県)",
+        "type": "普通"
+      },
+      {
+        "hour": 21,
+        "minute": 27,
+        "dest": "久留米",
+        "type": "普通"
+      },
+      {
+        "hour": 21,
+        "minute": 48,
+        "dest": "二日市",
+        "type": "普通"
+      },
+      {
+        "hour": 22,
+        "minute": 10,
+        "dest": "荒尾(熊本県)",
+        "type": "区"
+      },
+      {
+        "hour": 22,
+        "minute": 25,
+        "dest": "久留米",
+        "type": "普通"
+      },
+      {
+        "hour": 22,
+        "minute": 52,
+        "dest": "久留米",
+        "type": "普通"
+      },
+      {
+        "hour": 23,
+        "minute": 8,
+        "dest": "福間",
+        "type": "普通"
+      },
+      {
+        "hour": 23,
+        "minute": 23,
+        "dest": "南福岡",
+        "type": "普通"
+      },
+      {
+        "hour": 23,
+        "minute": 42,
+        "dest": "福間",
+        "type": "普通"
+      },
+      {
+        "hour": 24,
+        "minute": 5,
+        "dest": "赤間",
+        "type": "普通"
+      }
+    ]
+  }
+}
