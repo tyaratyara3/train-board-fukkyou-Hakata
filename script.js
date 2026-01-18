@@ -42,7 +42,7 @@ async function updateWeather() {
         // 現在時刻の降水確率を取得
         const precipProb = data.hourly.precipitation_probability[0] || 0;
 
-        document.getElementById('current-weather').textContent = `${weatherEmoji} ${temp}° / ${precipProb}%`;
+        document.getElementById('current-weather').textContent = `${temp}° / ${precipProb}%`;
     } catch (e) {
         console.error("Weather fetch failed", e);
         document.getElementById('current-weather').textContent = "--";
@@ -213,7 +213,7 @@ function renderTrains(trains, statusData) {
                 if (diffMins >= 12) {
                     statusText = "余裕";
                 } else if (diffMins >= 10) {
-                    statusText = "GO";
+                    statusText = "GO!";
                 } else if (diffMins === 9) {
                     statusText = "競歩";
                 } else if (diffMins === 8) {

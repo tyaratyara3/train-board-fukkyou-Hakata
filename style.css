@@ -132,6 +132,9 @@ body {
     font-weight: 500 !important;
     font-family: inherit !important;
     letter-spacing: normal !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .departure-list {
