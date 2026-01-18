@@ -126,9 +126,12 @@ body {
     border-bottom: 1px solid var(--border-color);
 }
 
-/* Ensure all header columns have the same font size */
+/* Ensure all header columns have the same font size and weight */
 .board-header span {
-    font-size: inherit;
+    font-size: 4vh !important;
+    font-weight: 500 !important;
+    font-family: inherit !important;
+    letter-spacing: normal !important;
 }
 
 .departure-list {
