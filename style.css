@@ -30,7 +30,8 @@ body {
     max-width: none;
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
+    /* Center vertically */
     margin-bottom: 2vh;
     padding: 0 20px;
     box-sizing: border-box;
@@ -39,24 +40,32 @@ body {
 
 .station-header h1 {
     margin: 0;
-    font-size: 7vh;
-    /* Massively increased */
+    font-size: 6vh;
+    /* Slightly smaller to fit */
     color: var(--text-primary);
     font-weight: 700;
+    text-align: center;
+    flex-grow: 1;
+    /* Takes up available space */
 }
 
 .clock {
     font-size: 8vh;
-    /* Massively increased */
     color: var(--text-primary);
     font-weight: 300;
     letter-spacing: 2px;
+    width: 250px;
+    /* Fixed width for alignment */
+    text-align: right;
 }
 
 .weather {
-    font-size: 5vh;
+    font-size: 4vh;
     color: var(--text-secondary);
     font-weight: 400;
+    width: 250px;
+    /* Same width as clock for balance */
+    text-align: left;
 }
 
 .board-frame {
