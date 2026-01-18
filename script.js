@@ -210,7 +210,7 @@ function renderTrains(trains, statusData) {
             if (diffMins >= 12) {
                 statusText = "余裕";
             } else if (diffMins >= 10) {
-                statusText = "出発";
+                statusText = "GO";
             } else if (diffMins === 9) {
                 statusText = "競歩";
             } else if (diffMins === 8) {
@@ -264,7 +264,38 @@ document.addEventListener('visibilitychange', async () => {
 document.addEventListener('click', requestWakeLock);
 document.addEventListener('touchstart', requestWakeLock);
 
+
 document.addEventListener('DOMContentLoaded', () => {
     init();
     requestWakeLock(); // Try automatically just in case
+
+    // Check sleep mode every minute
+    setInterval(checkSleepMode, 60000);
+    checkSleepMode();
 });
+
+function checkSleepMode() {
+    const now = new Date();
+    const hours = now.getHours();
+
+    // 01:00 ~ 04:59 is Sleep Mode
+    const isSleepTime = (hours >= 1 && hours < 5);
+
+    const overlay = document.getElementById('sleep-overlay');
+    const sleepClock = document.getElementById('sleep-clock');
+
+    if (isSleepTime) {
+        overlay.classList.remove('hidden');
+        const h = String(hours).padStart(2, '0');
+        const m = String(now.getMinutes()).padStart(2, '0');
+        sleepClock.textContent = `${h}:${m}`;
+
+        // Move clock slightly to prevent burn-in (every minute)
+        const randomX = Math.floor(Math.random() * 10) - 5; // -5 to 5 vw
+        const randomY = Math.floor(Math.random() * 10) - 5; // -5 to 5 vh
+        sleepClock.style.transform = `translate(${randomX}vw, ${randomY}vh)`;
+
+    } else {
+        overlay.classList.add('hidden');
+    }
+}
