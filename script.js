@@ -135,10 +135,6 @@ function updateStatusDisplay(statusData) {
 
         // スタイル: 平常 (緑)
         msgBox.classList.add('normal');
-
-        // DEBUG: 天気データの生値を表示
-        const debugWeather = statusData ? JSON.stringify(statusData.weather) : "No Data";
-        msgContainer.textContent += ` [DEBUG: ${debugWeather}]`;
     }
 
     if (statusData && statusData.timestamp) {

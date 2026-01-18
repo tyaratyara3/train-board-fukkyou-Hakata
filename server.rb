@@ -62,7 +62,10 @@ server.mount_proc '/api/status' do |req, res|
     
     # Simple In-Memory Cache
     current_time = Time.now
-    if !defined?($weather_cache) || (current_time - $weather_last_fetch) > (30 * 60)
+    # Initialize last_fetch if nil (prevents crash on first run or after error)
+    $weather_last_fetch ||= Time.at(0)
+    
+    if !defined?($weather_cache) || $weather_cache.nil? || (current_time - $weather_last_fetch) > (30 * 60)
       lat = 33.81
       lon = 130.54
       weather_url = "https://api.open-meteo.com/v1/forecast?latitude=#{lat}&longitude=#{lon}&current=temperature_2m,weather_code&hourly=precipitation_probability&timezone=Asia/Tokyo&forecast_hours=1"
@@ -83,11 +86,17 @@ server.mount_proc '/api/status' do |req, res|
         puts "Weather fetched from API"
       rescue => e
         puts "Weather fetch error: #{e.message}"
-        # On error, keep old cache if available, or show error
-        if $weather_cache
+        # On error, keep old cache if available (and not error), or show error
+        if $weather_cache && $weather_cache[:temp] != "ERR"
            puts "Using stale cache due to error"
+           # Don't update last_fetch so we retry next time? 
+           # Or better: update it to avoid spamming 429?
+           # Let's wait 5 minutes before retry if error
+           $weather_last_fetch = current_time - (25 * 60) 
         else
            $weather_cache = { temp: "ERR", precip: e.message }
+           # Wait 5 minutes before retry
+           $weather_last_fetch = current_time - (25 * 60)
         end
       end
     else
