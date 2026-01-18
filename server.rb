@@ -57,17 +57,27 @@ server.mount_proc '/api/status' do |req, res|
       end
     end
 
-    # Weather fetching (Proxy for old clients)
-    location = "Akama" # 福岡県宗像市赤間
-    weather_text = ""
+    # Weather fetching (Proxy for old clients) - Open-Meteo API
+    # 福岡県宗像市赤間: lat 33.81, lon 130.54
+    lat = 33.81
+    lon = 130.54
+    weather_url = "https://api.open-meteo.com/v1/forecast?latitude=#{lat}&longitude=#{lon}&current=temperature_2m,weather_code&hourly=precipitation_probability&timezone=Asia/Tokyo&forecast_hours=1"
+    
+    weather_data = { temp: "--", precip: "--" }
+    
     begin
-      # Use simple HTTP open-uri
       require 'open-uri'
-      # Get one line format: Condition Temp Precip
-      weather_text = URI.open("https://wttr.in/#{location}?format=%C+%t+%p").read.strip
+      require 'json'
+      
+      json_str = URI.open(weather_url).read
+      w_data = JSON.parse(json_str)
+      
+      temp = w_data["current"]["temperature_2m"].round
+      prob = w_data["hourly"]["precipitation_probability"][0] rescue 0
+      
+      weather_data = { temp: temp, precip: prob }
     rescue => e
       puts "Weather fetch error: #{e.message}"
-      weather_text = "天気取得不可"
     end
 
     res.body = {
@@ -75,7 +85,7 @@ server.mount_proc '/api/status' do |req, res|
       status: status_info,
       detail: status_detail,
       is_delay: is_delay,
-      weather: weather_text,
+      weather: weather_data,
       timestamp: (Time.now.utc + 9 * 3600).strftime("%H:%M")
     }.to_json
 

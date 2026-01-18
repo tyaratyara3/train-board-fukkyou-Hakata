@@ -7,47 +7,12 @@ async function init() {
     const scheduleData = await fetchSchedule();
     await updateBoard(scheduleData);
 
-    // 天気を取得
-    await updateWeather();
-    // 30分ごとに天気更新
-    setInterval(updateWeather, 30 * 60 * 1000);
-
     // 1秒ごとに更新 (アニメーションと時刻同期のため)
     setInterval(() => updateBoard(scheduleData), 1000);
 }
 
 // 天気予報 (Open-Meteo API - 認証不要)
-async function updateWeather() {
-    try {
-        // 教育大前駅付近 (福岡県宗像市)
-        const lat = 33.81;
-        const lon = 130.54;
-        const url = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current=temperature_2m,weather_code&hourly=precipitation_probability&timezone=Asia/Tokyo&forecast_hours=1`;
 
-        const res = await fetch(url);
-        const data = await res.json();
-
-        const temp = Math.round(data.current.temperature_2m);
-        const weatherCode = data.current.weather_code;
-
-        // Weather emoji based on WMO code
-        let weatherEmoji = '☀️';
-        if (weatherCode === 0) weatherEmoji = '☀️';
-        else if (weatherCode <= 3) weatherEmoji = '⛅';
-        else if (weatherCode <= 49) weatherEmoji = '🌫️';
-        else if (weatherCode <= 69) weatherEmoji = '🌧️';
-        else if (weatherCode <= 79) weatherEmoji = '❄️';
-        else if (weatherCode <= 99) weatherEmoji = '⛈️';
-
-        // 現在時刻の降水確率を取得
-        const precipProb = data.hourly.precipitation_probability[0] || 0;
-
-        document.getElementById('current-weather').textContent = `${temp}° / ${precipProb}%`;
-    } catch (e) {
-        console.error("Weather fetch failed", e);
-        document.getElementById('current-weather').textContent = "--";
-    }
-}
 
 function updateClock() {
     const now = new Date();
@@ -56,7 +21,7 @@ function updateClock() {
     document.getElementById('current-clock').textContent = `${hours}:${minutes}`;
 }
 
-console.log("Script v102 Loaded");
+console.log("Script v103 Loaded");
 
 async function fetchSchedule() {
     try {
@@ -69,14 +34,35 @@ async function fetchSchedule() {
     }
 }
 
-async function fetchStatus() {
-    try {
-        const res = await fetch('/api/status');
-        return await res.json();
-    } catch (e) {
-        console.error("Status load failed", e);
-        return null;
-    }
+function fetchStatus() {
+    return new Promise((resolve) => {
+        const xhr = new XMLHttpRequest();
+        xhr.open('GET', '/api/status');
+        xhr.timeout = 5000; // 5秒タイムアウト
+        xhr.onload = function () {
+            if (xhr.status === 200) {
+                try {
+                    const data = JSON.parse(xhr.responseText);
+                    resolve(data);
+                } catch (e) {
+                    console.error("Status parse failed", e);
+                    resolve(null);
+                }
+            } else {
+                console.error("Status fetch failed", xhr.status);
+                resolve(null);
+            }
+        };
+        xhr.onerror = function () {
+            console.error("Status fetch network error");
+            resolve(null);
+        };
+        xhr.ontimeout = function () {
+            console.error("Status fetch timeout");
+            resolve(null);
+        };
+        xhr.send();
+    });
 }
 
 async function updateBoard(scheduleData) {
@@ -143,6 +129,17 @@ function updateStatusDisplay(statusData) {
 
     if (statusData && statusData.timestamp) {
         document.getElementById('last-updated').textContent = `情報更新: ${statusData.timestamp}`;
+    }
+
+    // Weather from server (for Android 5.0 compatibility)
+    if (statusData && statusData.weather) {
+        const w = statusData.weather;
+        // Check if w is object (new format) or string (old fallback)
+        if (typeof w === 'object') {
+            document.getElementById('current-weather').textContent = `${w.temp}° / ${w.precip}%`;
+        } else {
+            document.getElementById('current-weather').textContent = w;
+        }
     }
 }
 
