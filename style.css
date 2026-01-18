@@ -81,17 +81,19 @@ body {
 }
 
 .col-dest {
-    width: 35%;
-    /* Reduced from 45% */
+    width: 45%;
+    /* Restored to original wide width */
     text-align: center;
+    white-space: nowrap;
 }
 
 .col-status {
-    width: 25%;
-    /* Increased from 15% */
+    width: 15%;
+    /* Restored to original narrow width */
     text-align: center;
     white-space: nowrap;
-    /* Prevent wrapping */
+    font-size: 0.8em;
+    /* Slightly smaller to fit "余裕" */
 }
 
 .board-frame {
