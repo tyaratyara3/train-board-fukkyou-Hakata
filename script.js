@@ -56,6 +56,8 @@ function updateClock() {
     document.getElementById('current-clock').textContent = `${hours}:${minutes}`;
 }
 
+console.log("Script v102 Loaded");
+
 async function fetchSchedule() {
     try {
         const res = await fetch('/data/schedule.json');

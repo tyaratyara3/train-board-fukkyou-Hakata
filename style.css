@@ -126,15 +126,20 @@ body {
     border-bottom: 1px solid var(--border-color);
 }
 
-/* Ensure all header columns have the same font size and weight */
+/* Ensure all header columns have the same font size, weight, and alignment */
 .board-header span {
     font-size: 4vh !important;
     font-weight: 500 !important;
     font-family: inherit !important;
     letter-spacing: normal !important;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    height: 100%;
+    padding: 0 !important;
+    /* Force remove padding from .col-type */
+    margin: 0 !important;
+    line-height: normal !important;
 }
 
 .departure-list {
