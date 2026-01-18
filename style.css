@@ -68,6 +68,32 @@ body {
     text-align: left;
 }
 
+.col-type {
+    width: 15%;
+    text-align: center;
+}
+
+.col-time {
+    width: 25%;
+    text-align: center;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    letter-spacing: 2px;
+}
+
+.col-dest {
+    width: 35%;
+    /* Reduced from 45% */
+    text-align: center;
+}
+
+.col-status {
+    width: 25%;
+    /* Increased from 15% */
+    text-align: center;
+    white-space: nowrap;
+    /* Prevent wrapping */
+}
+
 .board-frame {
     background-color: var(--card-bg);
     border: 1px solid var(--border-color);
