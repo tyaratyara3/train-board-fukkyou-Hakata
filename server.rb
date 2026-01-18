@@ -62,7 +62,7 @@ server.mount_proc '/api/status' do |req, res|
       status: status_info,
       detail: status_detail,
       is_delay: is_delay,
-      timestamp: Time.now.strftime("%H:%M")
+      timestamp: (Time.now.utc + 9 * 3600).strftime("%H:%M")
     }.to_json
 
   rescue => e
