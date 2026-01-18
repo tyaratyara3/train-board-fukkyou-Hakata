@@ -41,17 +41,6 @@ async function updateWeather() {
     }
 }
 
-function getWeatherEmoji(code) {
-    // WMO Weather interpretation codes - ミニマルスタイル
-    if (code === 0) return '晴'; // Clear
-    if (code <= 3) return '曇'; // Partly cloudy
-    if (code <= 49) return '霧'; // Fog
-    if (code <= 69) return '雨'; // Rain/Drizzle
-    if (code <= 79) return '雪'; // Snow
-    if (code <= 99) return '雷'; // Thunderstorm
-    return '晴';
-}
-
 function updateClock() {
     const now = new Date();
     const hours = String(now.getHours()).padStart(2, '0');
@@ -144,6 +133,11 @@ function updateStatusDisplay(statusData) {
 
     if (statusData && statusData.timestamp) {
         document.getElementById('last-updated').textContent = `情報更新: ${statusData.timestamp}`;
+    }
+
+    // Server-side provided weather
+    if (statusData && statusData.weather) {
+        document.getElementById('weather').textContent = statusData.weather;
     }
 }
 

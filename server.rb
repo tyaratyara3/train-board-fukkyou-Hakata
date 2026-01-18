@@ -57,11 +57,25 @@ server.mount_proc '/api/status' do |req, res|
       end
     end
 
+    # Weather fetching (Proxy for old clients)
+    location = "Akama" # 福岡県宗像市赤間
+    weather_text = ""
+    begin
+      # Use simple HTTP open-uri
+      require 'open-uri'
+      # Get one line format: Condition Temp Precip
+      weather_text = URI.open("https://wttr.in/#{location}?format=%C+%t+%p").read.strip
+    rescue => e
+      puts "Weather fetch error: #{e.message}"
+      weather_text = "天気取得不可"
+    end
+
     res.body = {
       line: "鹿児島本線",
       status: status_info,
       detail: status_detail,
       is_delay: is_delay,
+      weather: weather_text,
       timestamp: (Time.now.utc + 9 * 3600).strftime("%H:%M")
     }.to_json
 
