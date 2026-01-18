@@ -53,6 +53,12 @@ body {
     letter-spacing: 2px;
 }
 
+.weather {
+    font-size: 5vh;
+    color: var(--text-secondary);
+    font-weight: 400;
+}
+
 .board-frame {
     background-color: var(--card-bg);
     border: 1px solid var(--border-color);
@@ -70,7 +76,7 @@ body {
 
 .board-header {
     display: grid;
-    grid-template-columns: 0.8fr 1.6fr 3.0fr 0.6fr;
+    grid-template-columns: 0.8fr 1.6fr 2.0fr 1.6fr;
     padding: 0.5vh 10px;
     /* Minimal padding */
     background-color: #21262d;
@@ -90,7 +96,7 @@ body {
 .departure-row {
     flex-grow: 1;
     display: grid;
-    grid-template-columns: 0.8fr 1.6fr 3.0fr 0.6fr;
+    grid-template-columns: 0.8fr 1.6fr 2.0fr 1.6fr;
     padding: 0 10px;
     /* Minimal padding */
     font-size: 16vh;
@@ -168,6 +174,18 @@ body {
     font-weight: 500;
 }
 
+/* Smaller text sizes only for departure rows, not header */
+.departure-row .col-dest {
+    font-size: 0.85em;
+    /* Smaller destination text */
+}
+
+.departure-row .col-status {
+    font-size: 0.4em;
+    /* Much smaller status text */
+    text-align: left;
+}
+
 .status-blink {
     animation: pulse 2s infinite;
     color: var(--accent-red);
@@ -237,4 +255,55 @@ body {
     background-color: var(--bg-color);
     padding: 5px 10px;
     border-radius: 4px;
+}
+
+/* Animations */
+@keyframes slideOutLeft {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+
+.departing {
+    animation: slideOutLeft 0.8s ease-in forwards;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.2;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.blink-text {
+    animation: blink 1s infinite;
+    color: #ffeb3b;
+    /* Make it yellow for extra urgency */
+}
+
+/* Countdown styling - inherits train type colors */
+.col-type.countdown {
+    font-size: 0.6em;
+    /* 60% of parent to fit "XX分" */
+    transition: all 0.5s ease-in-out;
+}
+
+.col-type.departing-soon {
+    font-size: 0.6em;
+    background-color: rgba(88, 166, 255, 0.15);
+    color: var(--accent-blue);
+    border: 1px solid rgba(88, 166, 255, 0.4);
 }
