@@ -143,93 +143,103 @@ function updateStatusDisplay(statusData) {
 
 function renderTrains(trains, statusData) {
     const list = document.getElementById('departure-list');
-    list.innerHTML = '';
+    try {
+        list.innerHTML = '';
 
-    if (trains.length === 0) {
-        list.innerHTML = '<div class="loading">本日の運転は終了しました</div>';
-        return;
-    }
-
-    trains.forEach(train => {
-        const row = document.createElement('div');
-        row.className = 'departure-row';
-
-        // 種別クラス (local, rapid, etc)
-        // 種別クラス (local, rapid, etc)
-        let typeClass = 'local';
-        if (train.type === '区' || train.type.includes('区間快速')) {
-            typeClass = 'section-rapid';
-        } else if (train.type === '快' || train.type.includes('快速')) {
-            typeClass = 'rapid';
+        if (trains.length === 0) {
+            list.innerHTML = '<div class="loading">本日の運転は終了しました</div>';
+            return;
         }
 
-        // 種別表示文字列 (普通 -> 普)
-        let displayType = train.type;
-        if (displayType === '普通') {
-            displayType = '普';
-        }
+        trains.forEach(train => {
+            const row = document.createElement('div');
+            row.className = 'departure-row';
 
-        const timeStr = `${String(train.hour).padStart(2, '0')}:${String(train.minute).padStart(2, '0')}`;
-
-        // 発車時刻までの分数を計算
-        const now = new Date();
-        const trainDate = new Date();
-        trainDate.setHours(train.hour, train.minute, 0, 0);
-
-        const diffMs = trainDate - now;
-        const diffMins = Math.floor(diffMs / 60000);
-
-        // 15分以内なら「X分後」表示、それ以外は種別表示
-        let typeDisplay = displayType;
-        let typeExtraClass = '';
-        if (diffMins <= 15 && diffMins >= 0) {
-            typeDisplay = `${diffMins}分`;
-            typeExtraClass = ' countdown';
-        } else if (diffMins < 0 && diffMins >= -1) {
-            // 発車直後（1分以内）
-            typeDisplay = '発車';
-            typeExtraClass = ' departing-soon';
-        }
-
-        let timeClass = "col-time";
-
-        let statusText = "";
-        let statusClass = "col-status";
-
-        if (statusData && statusData.is_delay) {
-            statusText = "遅れ";
-            statusClass += " status-blink";
-        } else {
-            // ユーモアステータス（徒歩10分想定）
-            if (diffMins >= 12) {
-                statusText = "余裕";
-            } else if (diffMins >= 10) {
-                statusText = "GO";
-            } else if (diffMins === 9) {
-                statusText = "競歩";
-            } else if (diffMins === 8) {
-                statusText = "RUN!";
-            } else if (diffMins === 7) {
-                statusText = "ダッシュ!!";
-            } else if (diffMins === 6) {
-                statusText = "猛ダッシュ!!!";
-            } else if (diffMins === 5) {
-                statusText = "どうする？";
-            } else if (diffMins === 4) {
-                statusText = "ワンチャン";
-            } else if (diffMins <= 3 && diffMins >= 0) {
-                statusText = "challenger";
+            // 種別クラス (local, rapid, etc)
+            let typeClass = 'local';
+            if (train.type === '区' || train.type.includes('区間快速')) {
+                typeClass = 'section-rapid';
+            } else if (train.type === '快' || train.type.includes('快速')) {
+                typeClass = 'rapid';
             }
-        }
 
-        row.innerHTML = `
-            <span class="col-type ${typeClass}${typeExtraClass}">${typeDisplay}</span>
-            <span class="${timeClass}">${timeStr}</span>
-            <span class="col-dest">${train.dest}</span>
-            <span class="${statusClass}">${statusText}</span>
-        `;
-        list.appendChild(row);
-    });
+            // 種別表示文字列 (普通 -> 普)
+            let displayType = train.type;
+            if (displayType === '普通') {
+                displayType = '普';
+            }
+
+            const timeStr = `${String(train.hour).padStart(2, '0')}:${String(train.minute).padStart(2, '0')}`;
+
+            // 発車時刻までの分数を計算
+            const now = new Date();
+            const trainDate = new Date();
+            trainDate.setHours(train.hour, train.minute, 0, 0);
+
+            // 日付またぎ対策 (深夜0時過ぎで、電車の時間が24時台の場合など)
+            // train.hourが24以上なら翌日扱い
+            // ここでは簡易的に、現在時刻との差分が異常に大きい場合は日付調整を行う
+            // ただし、schedule.jsonが24:05のように書かれている場合、setHours(24,5)は翌日00:05になるので正しい。
+
+            const diffMs = trainDate - now;
+            const diffMins = Math.floor(diffMs / 60000);
+
+            // 15分以内なら「X分後」表示、それ以外は種別表示
+            let typeDisplay = displayType;
+            let typeExtraClass = '';
+            // カウントダウンロジック
+            if (diffMins <= 15 && diffMins >= 0) {
+                typeDisplay = `${diffMins}分`;
+                typeExtraClass = ' countdown';
+            } else if (diffMins < 0 && diffMins >= -1) {
+                // 発車直後（1分以内）
+                typeDisplay = '発車';
+                typeExtraClass = ' departing-soon';
+            }
+
+            let timeClass = "col-time";
+
+            let statusText = "";
+            let statusClass = "col-status";
+
+            if (statusData && statusData.is_delay) {
+                statusText = "遅れ";
+                statusClass += " status-blink";
+            } else {
+                // ユーモアステータス
+                if (diffMins >= 12) {
+                    statusText = "余裕";
+                } else if (diffMins >= 10) {
+                    statusText = "GO";
+                } else if (diffMins === 9) {
+                    statusText = "競歩";
+                } else if (diffMins === 8) {
+                    statusText = "RUN!";
+                } else if (diffMins === 7) {
+                    statusText = "ダッシュ!!";
+                } else if (diffMins === 6) {
+                    statusText = "猛ダッシュ!!!";
+                } else if (diffMins === 5) {
+                    statusText = "どうする？";
+                } else if (diffMins === 4) {
+                    statusText = "ワンチャン";
+                } else if (diffMins <= 3 && diffMins >= 0) {
+                    statusText = "challenger";
+                }
+            }
+
+            row.innerHTML = `
+                <span class="col-type ${typeClass}${typeExtraClass}">${typeDisplay}</span>
+                <span class="${timeClass}">${timeStr}</span>
+                <span class="col-dest">${train.dest}</span>
+                <span class="${statusClass}">${statusText}</span>
+            `;
+            list.appendChild(row);
+        });
+    } catch (e) {
+        console.error("Render crash:", e);
+        list.innerHTML = `<div class="loading">Render Error: ${e.message}</div>`;
+    }
 }
 
 
