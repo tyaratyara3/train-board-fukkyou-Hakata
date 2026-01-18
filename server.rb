@@ -59,30 +59,43 @@ server.mount_proc '/api/status' do |req, res|
 
     # Weather fetching (Proxy for old clients) - Open-Meteo API
     # 福岡県宗像市赤間: lat 33.81, lon 130.54
-    lat = 33.81
-    lon = 130.54
-    weather_url = "https://api.open-meteo.com/v1/forecast?latitude=#{lat}&longitude=#{lon}&current=temperature_2m,weather_code&hourly=precipitation_probability&timezone=Asia/Tokyo&forecast_hours=1"
     
-    weather_data = { temp: "--", precip: "--" }
-    
-    begin
-      require 'open-uri'
-      require 'json'
+    # Simple In-Memory Cache
+    current_time = Time.now
+    if !defined?($weather_cache) || (current_time - $weather_last_fetch) > (30 * 60)
+      lat = 33.81
+      lon = 130.54
+      weather_url = "https://api.open-meteo.com/v1/forecast?latitude=#{lat}&longitude=#{lon}&current=temperature_2m,weather_code&hourly=precipitation_probability&timezone=Asia/Tokyo&forecast_hours=1"
       
-      # Open-Meteo requires User-Agent
-      json_str = URI.open(weather_url, "User-Agent" => "TrainBoard/1.0").read
-      w_data = JSON.parse(json_str)
-      
-      temp = w_data["current"]["temperature_2m"].round
-      prob = w_data["hourly"]["precipitation_probability"][0] rescue 0
-      
-      weather_data = { temp: temp, precip: prob }
-    rescue => e
-      puts "Weather fetch error: #{e.message}"
-      # Embed error in json for client-side debug
-      weather_data = { temp: "ERR", precip: e.message }
+      begin
+        require 'open-uri'
+        require 'json'
+        
+        # Open-Meteo requires User-Agent
+        json_str = URI.open(weather_url, "User-Agent" => "TrainBoard/1.0").read
+        w_data = JSON.parse(json_str)
+        
+        temp = w_data["current"]["temperature_2m"].round
+        prob = w_data["hourly"]["precipitation_probability"][0] rescue 0
+        
+        $weather_cache = { temp: temp, precip: prob }
+        $weather_last_fetch = current_time
+        puts "Weather fetched from API"
+      rescue => e
+        puts "Weather fetch error: #{e.message}"
+        # On error, keep old cache if available, or show error
+        if $weather_cache
+           puts "Using stale cache due to error"
+        else
+           $weather_cache = { temp: "ERR", precip: e.message }
+        end
+      end
+    else
+       puts "Weather fetched from Cache"
     end
-
+    
+    weather_data = $weather_cache || { temp: "--", precip: "--" }
+    
     res.body = {
       line: "鹿児島本線",
       status: status_info,
