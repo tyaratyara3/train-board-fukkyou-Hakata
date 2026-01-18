@@ -69,7 +69,8 @@ server.mount_proc '/api/status' do |req, res|
       require 'open-uri'
       require 'json'
       
-      json_str = URI.open(weather_url).read
+      # Open-Meteo requires User-Agent
+      json_str = URI.open(weather_url, "User-Agent" => "TrainBoard/1.0").read
       w_data = JSON.parse(json_str)
       
       temp = w_data["current"]["temperature_2m"].round
