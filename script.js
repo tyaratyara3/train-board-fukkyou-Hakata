@@ -29,7 +29,15 @@ async function updateWeather() {
 
         const temp = Math.round(data.current.temperature_2m);
         const weatherCode = data.current.weather_code;
-        const weatherEmoji = getWeatherEmoji(weatherCode);
+
+        // Weather emoji based on WMO code
+        let weatherEmoji = '☀️';
+        if (weatherCode === 0) weatherEmoji = '☀️';
+        else if (weatherCode <= 3) weatherEmoji = '⛅';
+        else if (weatherCode <= 49) weatherEmoji = '🌫️';
+        else if (weatherCode <= 69) weatherEmoji = '🌧️';
+        else if (weatherCode <= 79) weatherEmoji = '❄️';
+        else if (weatherCode <= 99) weatherEmoji = '⛈️';
 
         // 現在時刻の降水確率を取得
         const precipProb = data.hourly.precipitation_probability[0] || 0;
@@ -133,11 +141,6 @@ function updateStatusDisplay(statusData) {
 
     if (statusData && statusData.timestamp) {
         document.getElementById('last-updated').textContent = `情報更新: ${statusData.timestamp}`;
-    }
-
-    // Server-side provided weather
-    if (statusData && statusData.weather) {
-        document.getElementById('weather').textContent = statusData.weather;
     }
 }
 

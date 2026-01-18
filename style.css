@@ -126,6 +126,11 @@ body {
     border-bottom: 1px solid var(--border-color);
 }
 
+/* Ensure all header columns have the same font size */
+.board-header span {
+    font-size: inherit;
+}
+
 .departure-list {
     padding: 0;
     flex-grow: 1;
