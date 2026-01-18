@@ -78,6 +78,7 @@ server.mount_proc '/api/status' do |req, res|
       weather_data = { temp: temp, precip: prob }
     rescue => e
       puts "Weather fetch error: #{e.message}"
+      status_detail += " [天気取得エラー: #{e.message}]"
     end
 
     res.body = {
