@@ -207,7 +207,9 @@ function renderTrains(trains, statusData) {
                     statusText = "遅れ";
                     statusClass += " status-blink";
                 } else {
-                    if (diffMins >= 12) statusText = "余裕";
+                    if (diffMins > 15) statusText = "";
+                    else if (diffMins >= 14) statusText = "余裕";
+                    else if (diffMins >= 12) statusText = "準備開始";
                     else if (diffMins >= 10) statusText = "GO!";
                     else if (diffMins === 9) statusText = "競歩";
                     else if (diffMins === 8) statusText = "RUN!";
