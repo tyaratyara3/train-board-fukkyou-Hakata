@@ -24,6 +24,8 @@ body {
     width: 100vw;
     overflow: auto;
     /* Enable page scrolling */
+    padding-top: 1vh;
+    padding-bottom: 1vh;
 }
 
 .station-header {
@@ -41,31 +43,30 @@ body {
 
 .station-header h1 {
     margin: 0;
-    font-size: 6vh;
-    /* Slightly smaller to fit */
+    font-size: 5vh;
+    /* 6vh -> 5vh */
     color: var(--text-primary);
     font-weight: 700;
     text-align: center;
     flex-grow: 1;
-    /* Takes up available space */
 }
 
 .clock {
-    font-size: 8vh;
+    font-size: 6vh;
+    /* 8vh -> 6vh */
     color: var(--text-primary);
     font-weight: 300;
     letter-spacing: 2px;
     width: 250px;
-    /* Fixed width for alignment */
     text-align: right;
 }
 
 .weather {
-    font-size: 4vh;
+    font-size: 3vh;
+    /* 4vh -> 3vh */
     color: var(--text-secondary);
     font-weight: 400;
     width: 250px;
-    /* Same width as clock for balance */
     text-align: left;
 }
 
@@ -373,8 +374,10 @@ body {
 }
 
 /* Countdown styling - inherits train type colors */
+/* Countdown styling - inherits train type colors */
 .col-type.countdown {
-    font-size: 0.6em;
+    font-size: 0.55em;
+    /* Reduced from 0.6em to fit double digits */
     /* 60% of parent to fit "XX分" */
     transition: all 0.5s ease-in-out;
 }
