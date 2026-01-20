@@ -22,7 +22,8 @@ body {
     justify-content: center;
     height: 100vh;
     width: 100vw;
-    overflow: hidden;
+    overflow: auto;
+    /* Enable page scrolling */
 }
 
 .station-header {
@@ -147,6 +148,24 @@ body {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
+    overflow-y: auto;
+    /* Enable vertical scrolling for train list */
+    /* Custom scrollbar styling for Chrome/Safari/Webkit */
+    scrollbar-width: thin;
+    scrollbar-color: var(--border-color) var(--card-bg);
+}
+
+.departure-list::-webkit-scrollbar {
+    width: 8px;
+}
+
+.departure-list::-webkit-scrollbar-track {
+    background: var(--card-bg);
+}
+
+.departure-list::-webkit-scrollbar-thumb {
+    background-color: var(--border-color);
+    border-radius: 4px;
 }
 
 .departure-row {
