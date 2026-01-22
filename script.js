@@ -35,7 +35,8 @@ console.log("Script v103 Loaded");
 
 async function fetchSchedule() {
     try {
-        const res = await fetch('/data/schedule.json');
+        const url = window.SCHEDULE_URL || '/data/schedule.json';
+        const res = await fetch(url);
         return await res.json();
     } catch (e) {
         console.error("Schedule load failed", e);
@@ -45,33 +46,17 @@ async function fetchSchedule() {
 }
 
 function fetchStatus() {
-    return new Promise((resolve) => {
-        const xhr = new XMLHttpRequest();
-        xhr.open('GET', '/api/status');
-        xhr.timeout = 5000; // 5秒タイムアウト
-        xhr.onload = function () {
-            if (xhr.status === 200) {
-                try {
-                    const data = JSON.parse(xhr.responseText);
-                    resolve(data);
-                } catch (e) {
-                    console.error("Status parse failed", e);
-                    resolve(null);
-                }
-            } else {
-                console.error("Status fetch failed", xhr.status);
-                resolve(null);
-            }
-        };
-        xhr.onerror = function () {
-            console.error("Status fetch network error");
+    return new Promise(async (resolve) => {
+        try {
+            // Re-fetch the schedule JSON which now contains traffic_status
+            const url = window.SCHEDULE_URL || '/data/schedule.json';
+            const res = await fetch(url + '?t=' + new Date().getTime()); // Anti-cache
+            const data = await res.json();
+            resolve(data.traffic_status);
+        } catch (e) {
+            console.error("Status fetch failed", e);
             resolve(null);
-        };
-        xhr.ontimeout = function () {
-            console.error("Status fetch timeout");
-            resolve(null);
-        };
-        xhr.send();
+        }
     });
 }
 
@@ -123,20 +108,24 @@ function updateStatusDisplay(statusData) {
     const msgContainer = document.getElementById('scroll-message');
     const msgBox = document.querySelector('.scroll-message-container');
 
-    if (statusData && statusData.is_delay) {
-        msgContainer.textContent = `${statusData.detail} (更新日時: ${statusData.timestamp.split(' ')[1]})`;
+    if (statusData && statusData.is_delay) { // Matched Scraper key 'is_delay'
+        msgContainer.textContent = statusData.message; // Matched Scraper key 'message'
         msgContainer.style.animationDuration = "10s"; // 遅延時は少し速く
 
         // スタイル: 遅延 (赤)
         msgBox.classList.remove('normal');
+        msgBox.classList.add('delayed'); // Add delayed class
     } else {
-        msgContainer.textContent = "現在、鹿児島本線は通常通り運行しています。";
+        // Normal or Fallback
+        msgContainer.textContent = (statusData && statusData.message) ? statusData.message : "現在、鹿児島本線は通常通り運行しています。";
         msgContainer.style.animationDuration = "15s"; // 通常速度
 
         // スタイル: 平常 (緑)
+        msgBox.classList.remove('delayed');
         msgBox.classList.add('normal');
     }
 
+    // Timestamp is optional or not provided by current scraper
     if (statusData && statusData.timestamp) {
         document.getElementById('last-updated').textContent = `情報更新: ${statusData.timestamp}`;
     }
@@ -206,6 +195,28 @@ function renderTrains(trains, statusData) {
                 if (statusData && statusData.is_delay) {
                     statusText = "遅れ";
                     statusClass += " status-blink";
+                } else if (train.arrival_time || train.transfer_req) {
+                    // Arrival Time Mode (Yoshizuka)
+                    if (train.arrival_time) {
+                        statusText = `${train.arrival_time}着`;
+                    } else {
+                        // Unknown arrival time (Transfer)
+                        statusText = "";
+                    }
+
+                    if (train.transfer_req) {
+                        statusClass += " transfer-req";
+
+                        // Show transfer info if available
+                        if (train.transfer_info) {
+                            statusText = train.transfer_info;
+                            if (train.transfer_arrival) {
+                                statusText += `<br><span class="transfer-arrival">${train.transfer_arrival}</span>`;
+                            }
+                        } else {
+                            statusText = "要乗換";
+                        }
+                    }
                 } else {
                     if (diffMins > 15) statusText = "";
                     else if (diffMins >= 14) statusText = "余裕";
