@@ -259,16 +259,30 @@ class TrainApp
       begin
         lat = 33.81
         lon = 130.54
-        weather_url = "https://api.open-meteo.com/v1/forecast?latitude=#{lat}&longitude=#{lon}&current=temperature_2m,weather_code&hourly=precipitation_probability&timezone=Asia/Tokyo&forecast_hours=1"
-        json_str = URI.open(weather_url, "User-Agent" => "TrainBoard/1.0").read
-        w_data = JSON.parse(json_str)
+        uri = URI("https://api.open-meteo.com/v1/forecast?latitude=#{lat}&longitude=#{lon}&current=temperature_2m,weather_code&hourly=precipitation_probability&timezone=Asia/Tokyo&forecast_hours=1")
         
-        temp = w_data["current"]["temperature_2m"].round
-        prob = w_data["hourly"]["precipitation_probability"][0] rescue 0
+        # Use Net::HTTP for better reliability
+        http = Net::HTTP.new(uri.host, uri.port)
+        http.use_ssl = true
+        request = Net::HTTP::Get.new(uri)
+        request["User-Agent"] = "TrainBoard/1.0"
         
-        $weather_cache = { temp: temp, precip: prob }
-        $weather_last_fetch = current_time
-      rescue
+        response = http.request(request)
+        
+        if response.code == '200'
+          w_data = JSON.parse(response.body)
+          temp = w_data["current"]["temperature_2m"].round
+          prob = w_data["hourly"]["precipitation_probability"][0] rescue 0
+          
+          $weather_cache = { temp: temp, precip: prob }
+          $weather_last_fetch = current_time
+          puts "Weather fetched: #{temp}C, #{prob}%"
+        else
+          puts "Weather fetch failed: #{response.code} #{response.message}"
+          return $weather_cache || { temp: "--", precip: "--" }
+        end
+      rescue => e
+         puts "Weather Error: #{e.message}"
          return $weather_cache || { temp: "--", precip: "--" }
       end
     end
