@@ -137,8 +137,21 @@ function updateStatusDisplay(statusData) {
         }
     }
 
-    // 3. Weather (Client-side fetch handles this independently, so we ignore server weather)
-    // Server weather logic removed to avoid conflict.
+    // 3. Weather Fallback (Hybrid)
+    // If client-side fetch failing (Android), use server data
+    const weatherEl = document.getElementById('current-weather');
+    // If empty or default "--", try server data
+    if (weatherEl.textContent.includes('--') || weatherEl.textContent === "") {
+        if (statusData && statusData.weather) {
+            const w = statusData.weather;
+            if (typeof w === 'object' && w.temp !== "--") {
+                weatherEl.textContent = `${w.temp}° / ${w.precip}%`;
+                console.log("Using server weather fallback");
+            } else if (typeof w === 'string' && w !== "" && !w.includes("--")) {
+                weatherEl.textContent = w;
+            }
+        }
+    }
 }
 
 function renderTrains(trains, statusData) {
@@ -191,32 +204,17 @@ function renderTrains(trains, statusData) {
                 let statusText = "";
                 let statusClass = "col-status";
 
+                // Status Priority Logic:
+                // 1. Delay (Most important)
+                // 2. Imminent Departure / Countdown (RUN!, etc.) -> "Previous runs" user liked this
+                // 3. Arrival/Transfer Info (Standard info)
+
                 if (statusData && statusData.is_delay) {
                     statusText = "遅れ";
                     statusClass += " status-blink";
-                } else if (train.arrival_time || train.transfer_req) {
-                    // Arrival Time Mode (Yoshizuka)
-                    if (train.arrival_time) {
-                        statusText = `${train.arrival_time}着`;
-                    } else {
-                        // Unknown arrival time (Transfer)
-                        statusText = "";
-                    }
-
-                    if (train.transfer_req) {
-                        statusClass += " transfer-req";
-
-                        // Show transfer info if available
-                        if (train.transfer_info) {
-                            statusText = train.transfer_info;
-                            if (train.transfer_arrival) {
-                                statusText += `<br><span class="transfer-arrival">${train.transfer_arrival}</span>`;
-                            }
-                        } else {
-                            statusText = "要乗換";
-                        }
-                    }
-                } else {
+                } else if (diffMins <= 15 && diffMins > -2) {
+                    // Countdown Mode (Prioritize this over transfer info for fun/urgency)
+                    // Note: typeDisplay already shows countdown/departure, but statusText adds flavor
                     if (diffMins > 15) statusText = "";
                     else if (diffMins >= 14) statusText = "余裕";
                     else if (diffMins >= 12) statusText = "準備開始";
@@ -228,6 +226,30 @@ function renderTrains(trains, statusData) {
                     else if (diffMins === 5) statusText = "どうする？";
                     else if (diffMins === 4) statusText = "ワンチャン";
                     else if (diffMins <= 3 && diffMins >= 0) statusText = "challenger";
+                    else if (diffMins < 0) statusText = "発車";
+
+                } else if (train.arrival_time || train.transfer_req) {
+                    // Arrival Time Mode (Standard info when not urgent)
+                    if (train.arrival_time) {
+                        statusText = `${train.arrival_time}着`;
+                    } else {
+                        statusText = "";
+                    }
+
+                    if (train.transfer_req) {
+                        statusClass += " transfer-req";
+                        if (train.transfer_info) {
+                            statusText = train.transfer_info; // Overwrites arrival time if transfer is key
+                            if (train.transfer_arrival) {
+                                statusText += `<br><span class="transfer-arrival">${train.transfer_arrival}</span>`;
+                            }
+                        } else {
+                            statusText = "要乗換";
+                        }
+                    }
+                } else {
+                    // Default / Far future
+                    statusText = "";
                 }
 
                 newHTML += `
