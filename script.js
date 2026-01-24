@@ -36,7 +36,8 @@ console.log("Script v103 Loaded");
 async function fetchSchedule() {
     try {
         const url = window.SCHEDULE_URL || '/data/schedule.json';
-        const res = await fetch(url);
+        // Add timestamp to bypass cache
+        const res = await fetch(url + '?t=' + new Date().getTime());
         return await res.json();
     } catch (e) {
         console.error("Schedule load failed", e);
