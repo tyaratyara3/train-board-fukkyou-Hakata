@@ -311,7 +311,72 @@ function checkSleepMode() {
         const randomY = Math.floor(Math.random() * 10) - 5; // -5 to 5 vh
         sleepClock.style.transform = `translate(${randomX}vw, ${randomY}vh)`;
 
-    } else {
-        overlay.classList.add('hidden');
     }
 }
+
+
+// Client-Side Weather Fetching (Direct Open-Meteo)
+function fetchWeather() {
+    const lat = 33.81;
+    const lon = 130.54;
+    const url = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current=temperature_2m,weather_code&hourly=precipitation_probability&timezone=Asia/Tokyo&forecast_hours=1`;
+
+    console.log("Fetching weather client-side...");
+    fetch(url)
+        .then(response => response.json())
+        .then(data => {
+            try {
+                const temp = Math.round(data.current.temperature_2m);
+                const precip = data.hourly.precipitation_probability[0] || 0;
+                const weatherText = `${temp}° / ${precip}%`;
+
+                document.getElementById('current-weather').textContent = weatherText;
+                console.log("Weather updated:", weatherText);
+            } catch (e) {
+                console.error("Weather parse error:", e);
+                // Keep default or previous
+            }
+        })
+        .catch(err => {
+            console.error("Weather fetch failed:", err);
+        });
+}
+
+// Override updateStatusDisplay behavior to NOT overwrite weather from server if it is missing
+const originalUpdateStatusDisplay = updateStatusDisplay;
+updateStatusDisplay = function (statusData) {
+    // Call original logic handling text/scroll
+    const msgContainer = document.getElementById('scroll-message');
+    const msgBox = document.querySelector('.scroll-message-container');
+
+    if (statusData && statusData.is_delay) {
+        msgContainer.textContent = statusData.message;
+        msgContainer.style.animationDuration = "10s";
+        msgBox.classList.remove('normal');
+        msgBox.classList.add('delayed');
+    } else {
+        msgContainer.textContent = (statusData && statusData.message) ? statusData.message : "現在、鹿児島本線は通常通り運行しています。";
+        msgContainer.style.animationDuration = "15s";
+        msgBox.classList.remove('delayed');
+        msgBox.classList.add('normal');
+    }
+
+    if (statusData && statusData.timestamp) {
+        document.getElementById('last-updated').textContent = `情報更新: ${statusData.timestamp}`;
+    }
+
+    // IGNORE server weather data to rely on client fetch
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    init();
+    requestWakeLock();
+
+    // Weather Init
+    fetchWeather();
+    setInterval(fetchWeather, 30 * 60 * 1000); // Every 30 mins
+
+    // Check sleep mode every minute
+    setInterval(checkSleepMode, 60000);
+    checkSleepMode();
+});
