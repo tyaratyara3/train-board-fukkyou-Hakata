@@ -195,6 +195,13 @@ class TrainApp
       end
     end
 
+    # Fallback: If requesting /schedule.json or /data/schedule.json, try finding it in root
+    if path == '/schedule.json' || path == '/data/schedule.json'
+        if File.file?('./schedule.json')
+            return ServeFile('./schedule.json')
+        end
+    end
+
     [404, {'Content-Type' => 'text/plain'}, ['Not Found']]
   end
 
