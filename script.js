@@ -48,11 +48,12 @@ async function fetchSchedule() {
 function fetchStatus() {
     return new Promise(async (resolve) => {
         try {
-            // Re-fetch the schedule JSON which now contains traffic_status
-            const url = window.SCHEDULE_URL || '/data/schedule.json';
+            // Use server API for realtime status instead of static JSON
+            const url = '/api/status';
             const res = await fetch(url + '?t=' + new Date().getTime()); // Anti-cache
             const data = await res.json();
-            resolve(data.traffic_status);
+            // API returns the flat status object directly
+            resolve(data);
         } catch (e) {
             console.error("Status fetch failed", e);
             resolve(null);
