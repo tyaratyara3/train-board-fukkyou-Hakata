@@ -1025,7 +1025,1136 @@
       }
     ],
     "holiday": [
-
+      {
+        "hour": 5,
+        "minute": 5,
+        "dest": "門司港",
+        "type": "普通",
+        "arrival_time": "5:53",
+        "transfer_req": false,
+        "transfer_info": null,
+        "transfer_arrival": null
+      },
+      {
+        "hour": 5,
+        "minute": 25,
+        "dest": "小倉",
+        "type": "普通",
+        "arrival_time": "6:08",
+        "transfer_req": false,
+        "transfer_info": null,
+        "transfer_arrival": null
+      },
+      {
+        "hour": 5,
+        "minute": 45,
+        "dest": "小倉",
+        "type": "普通",
+        "arrival_time": "6:26",
+        "transfer_req": false,
+        "transfer_info": null,
+        "transfer_arrival": null
+      },
+      {
+        "hour": 5,
+        "minute": 55,
+        "dest": "小倉",
+        "type": "普通",
+        "arrival_time": "6:37",
+        "transfer_req": false,
+        "transfer_info": null,
+        "transfer_arrival": null
+      },
+      {
+        "hour": 6,
+        "minute": 6,
+        "dest": "小倉",
+        "type": "普通",
+        "arrival_time": "6:53",
+        "transfer_req": false,
+        "transfer_info": null,
+        "transfer_arrival": null
+      },
+      {
+        "hour": 6,
+        "minute": 39,
+        "dest": "小倉",
+        "type": "区",
+        "arrival_time": "7:17",
+        "transfer_req": false,
+        "transfer_info": null,
+        "transfer_arrival": null
+      },
+      {
+        "hour": 6,
+        "minute": 43,
+        "dest": "海老津",
+        "type": "普通",
+        "arrival_time": "7:32",
+        "transfer_req": false,
+        "transfer_info": null,
+        "transfer_arrival": null
+      },
+      {
+        "hour": 6,
+        "minute": 51,
+        "dest": "福間",
+        "type": "普通",
+        "arrival_time": null,
+        "transfer_req": true,
+        "transfer_info": "福間で普通へ",
+        "transfer_arrival": null
+      },
+      {
+        "hour": 6,
+        "minute": 58,
+        "dest": "小倉",
+        "type": "区",
+        "arrival_time": "7:45",
+        "transfer_req": false,
+        "transfer_info": null,
+        "transfer_arrival": null
+      },
+      {
+        "hour": 7,
+        "minute": 6,
+        "dest": "門司港",
+        "type": "普通",
+        "arrival_time": "7:50",
+        "transfer_req": false,
+        "transfer_info": null,
+        "transfer_arrival": null
+      },
+      {
+        "hour": 7,
+        "minute": 14,
+        "dest": "小倉",
+        "type": "特",
+        "arrival_time": null,
+        "transfer_req": true,
+        "transfer_info": "福間で普通へ",
+        "transfer_arrival": "7:45着"
+      },
+      {
+        "hour": 7,
+        "minute": 17,
+        "dest": "門司港",
+        "type": "普通",
+        "arrival_time": "7:57",
+        "transfer_req": false,
+        "transfer_info": null,
+        "transfer_arrival": null
+      },
+      {
+        "hour": 7,
+        "minute": 28,
+        "dest": "門司港",
+        "type": "普通",
+        "arrival_time": "8:14",
+        "transfer_req": false,
+        "transfer_info": null,
+        "transfer_arrival": null
+      },
+      {
+        "hour": 7,
+        "minute": 34,
+        "dest": "宮崎空港",
+        "type": "特",
+        "arrival_time": null,
+        "transfer_req": true,
+        "transfer_info": "福間で普通へ",
+        "transfer_arrival": "8:14着"
+      },
+      {
+        "hour": 7,
+        "minute": 41,
+        "dest": "小倉",
+        "type": "普通",
+        "arrival_time": "8:35",
+        "transfer_req": false,
+        "transfer_info": null,
+        "transfer_arrival": null
+      },
+      {
+        "hour": 7,
+        "minute": 49,
+        "dest": "小倉",
+        "type": "快",
+        "arrival_time": null,
+        "transfer_req": true,
+        "transfer_info": "福間で普通へ",
+        "transfer_arrival": "8:35着"
+      },
+      {
+        "hour": 7,
+        "minute": 55,
+        "dest": "福間",
+        "type": "普通",
+        "arrival_time": null,
+        "transfer_req": true,
+        "transfer_info": "福間で普通へ",
+        "transfer_arrival": null
+      },
+      {
+        "hour": 8,
+        "minute": 2,
+        "dest": "門司港",
+        "type": "普通",
+        "arrival_time": "8:56",
+        "transfer_req": false,
+        "transfer_info": null,
+        "transfer_arrival": null
+      },
+      {
+        "hour": 8,
+        "minute": 12,
+        "dest": "門司港",
+        "type": "快",
+        "arrival_time": null,
+        "transfer_req": true,
+        "transfer_info": "福間で普通へ",
+        "transfer_arrival": "8:56着"
+      },
+      {
+        "hour": 8,
+        "minute": 17,
+        "dest": "福間",
+        "type": "普通",
+        "arrival_time": null,
+        "transfer_req": true,
+        "transfer_info": "福間で普通へ",
+        "transfer_arrival": "9:12着"
+      },
+      {
+        "hour": 8,
+        "minute": 20,
+        "dest": "福間",
+        "type": "普通",
+        "arrival_time": null,
+        "transfer_req": true,
+        "transfer_info": "福間で普通へ",
+        "transfer_arrival": "9:12着"
+      },
+      {
+        "hour": 8,
+        "minute": 26,
+        "dest": "門司港",
+        "type": "普通",
+        "arrival_time": "9:18",
+        "transfer_req": false,
+        "transfer_info": null,
+        "transfer_arrival": null
+      },
+      {
+        "hour": 8,
+        "minute": 38,
+        "dest": "門司港",
+        "type": "区",
+        "arrival_time": "9:12",
+        "transfer_req": false,
+        "transfer_info": null,
+        "transfer_arrival": null
+      },
+      {
+        "hour": 8,
+        "minute": 46,
+        "dest": "折尾",
+        "type": "普通",
+        "arrival_time": "9:36",
+        "transfer_req": false,
+        "transfer_info": null,
+        "transfer_arrival": null
+      },
+      {
+        "hour": 8,
+        "minute": 52,
+        "dest": "門司港",
+        "type": "快",
+        "arrival_time": null,
+        "transfer_req": true,
+        "transfer_info": "福間で普通へ",
+        "transfer_arrival": "9:36着"
+      },
+      {
+        "hour": 8,
+        "minute": 52,
+        "dest": "門司港",
+        "type": "快",
+        "arrival_time": null,
+        "transfer_req": true,
+        "transfer_info": "福間で普通へ",
+        "transfer_arrival": "9:36着"
+      },
+      {
+        "hour": 9,
+        "minute": 6,
+        "dest": "門司港",
+        "type": "普通",
+        "arrival_time": "9:54",
+        "transfer_req": false,
+        "transfer_info": null,
+        "transfer_arrival": null
+      },
+      {
+        "hour": 9,
+        "minute": 19,
+        "dest": "福間",
+        "type": "普通",
+        "arrival_time": null,
+        "transfer_req": true,
+        "transfer_info": "福間で普通へ",
+        "transfer_arrival": null
+      },
+      {
+        "hour": 9,
+        "minute": 31,
+        "dest": "門司港",
+        "type": "区",
+        "arrival_time": "10:05",
+        "transfer_req": false,
+        "transfer_info": null,
+        "transfer_arrival": null
+      },
+      {
+        "hour": 9,
+        "minute": 31,
+        "dest": "門司港",
+        "type": "区",
+        "arrival_time": "10:08",
+        "transfer_req": false,
+        "transfer_info": null,
+        "transfer_arrival": null
+      },
+      {
+        "hour": 9,
+        "minute": 40,
+        "dest": "折尾",
+        "type": "普通",
+        "arrival_time": "10:30",
+        "transfer_req": false,
+        "transfer_info": null,
+        "transfer_arrival": null
+      },
+      {
+        "hour": 9,
+        "minute": 49,
+        "dest": "小倉",
+        "type": "快",
+        "arrival_time": null,
+        "transfer_req": true,
+        "transfer_info": "福間で普通へ",
+        "transfer_arrival": null
+      },
+      {
+        "hour": 9,
+        "minute": 49,
+        "dest": "小倉",
+        "type": "快",
+        "arrival_time": null,
+        "transfer_req": true,
+        "transfer_info": "福間で普通へ",
+        "transfer_arrival": null
+      },
+      {
+        "hour": 10,
+        "minute": 5,
+        "dest": "福間",
+        "type": "普通",
+        "arrival_time": null,
+        "transfer_req": true,
+        "transfer_info": "福間で普通へ",
+        "transfer_arrival": "10:51着"
+      },
+      {
+        "hour": 10,
+        "minute": 12,
+        "dest": "門司港",
+        "type": "区",
+        "arrival_time": "10:51",
+        "transfer_req": false,
+        "transfer_info": null,
+        "transfer_arrival": null
+      },
+      {
+        "hour": 10,
+        "minute": 25,
+        "dest": "折尾",
+        "type": "普通",
+        "arrival_time": "11:13",
+        "transfer_req": false,
+        "transfer_info": null,
+        "transfer_arrival": null
+      },
+      {
+        "hour": 10,
+        "minute": 34,
+        "dest": "門司港",
+        "type": "区",
+        "arrival_time": null,
+        "transfer_req": true,
+        "transfer_info": "福間で普通へ",
+        "transfer_arrival": "11:13着"
+      },
+      {
+        "hour": 10,
+        "minute": 34,
+        "dest": "門司港",
+        "type": "区",
+        "arrival_time": null,
+        "transfer_req": true,
+        "transfer_info": "福間で普通へ",
+        "transfer_arrival": "11:13着"
+      },
+      {
+        "hour": 10,
+        "minute": 43,
+        "dest": "福間",
+        "type": "普通",
+        "arrival_time": null,
+        "transfer_req": true,
+        "transfer_info": "福間で普通へ",
+        "transfer_arrival": "11:52着"
+      },
+      {
+        "hour": 11,
+        "minute": 5,
+        "dest": "福間",
+        "type": "普通",
+        "arrival_time": null,
+        "transfer_req": true,
+        "transfer_info": "福間で普通へ",
+        "transfer_arrival": "11:52着"
+      },
+      {
+        "hour": 11,
+        "minute": 13,
+        "dest": "門司港",
+        "type": "区",
+        "arrival_time": "11:52",
+        "transfer_req": false,
+        "transfer_info": null,
+        "transfer_arrival": null
+      },
+      {
+        "hour": 11,
+        "minute": 28,
+        "dest": "折尾",
+        "type": "普通",
+        "arrival_time": "12:14",
+        "transfer_req": false,
+        "transfer_info": null,
+        "transfer_arrival": null
+      },
+      {
+        "hour": 11,
+        "minute": 35,
+        "dest": "門司港",
+        "type": "区",
+        "arrival_time": null,
+        "transfer_req": true,
+        "transfer_info": "福間で普通へ",
+        "transfer_arrival": "12:14着"
+      },
+      {
+        "hour": 11,
+        "minute": 35,
+        "dest": "門司港",
+        "type": "区",
+        "arrival_time": null,
+        "transfer_req": true,
+        "transfer_info": "福間で普通へ",
+        "transfer_arrival": "12:14着"
+      },
+      {
+        "hour": 11,
+        "minute": 44,
+        "dest": "福間",
+        "type": "普通",
+        "arrival_time": null,
+        "transfer_req": true,
+        "transfer_info": "福間で普通へ",
+        "transfer_arrival": "12:53着"
+      },
+      {
+        "hour": 12,
+        "minute": 5,
+        "dest": "福間",
+        "type": "普通",
+        "arrival_time": null,
+        "transfer_req": true,
+        "transfer_info": "福間で普通へ",
+        "transfer_arrival": "12:53着"
+      },
+      {
+        "hour": 12,
+        "minute": 13,
+        "dest": "門司港",
+        "type": "区",
+        "arrival_time": "12:53",
+        "transfer_req": false,
+        "transfer_info": null,
+        "transfer_arrival": null
+      },
+      {
+        "hour": 12,
+        "minute": 25,
+        "dest": "折尾",
+        "type": "普通",
+        "arrival_time": "13:13",
+        "transfer_req": false,
+        "transfer_info": null,
+        "transfer_arrival": null
+      },
+      {
+        "hour": 12,
+        "minute": 34,
+        "dest": "小倉",
+        "type": "区",
+        "arrival_time": null,
+        "transfer_req": true,
+        "transfer_info": "福間で普通へ",
+        "transfer_arrival": "13:13着"
+      },
+      {
+        "hour": 12,
+        "minute": 46,
+        "dest": "福間",
+        "type": "普通",
+        "arrival_time": null,
+        "transfer_req": true,
+        "transfer_info": "福間で普通へ",
+        "transfer_arrival": "13:51着"
+      },
+      {
+        "hour": 13,
+        "minute": 5,
+        "dest": "福間",
+        "type": "普通",
+        "arrival_time": null,
+        "transfer_req": true,
+        "transfer_info": "福間で普通へ",
+        "transfer_arrival": "13:51着"
+      },
+      {
+        "hour": 13,
+        "minute": 13,
+        "dest": "門司港",
+        "type": "区",
+        "arrival_time": "13:51",
+        "transfer_req": false,
+        "transfer_info": null,
+        "transfer_arrival": null
+      },
+      {
+        "hour": 13,
+        "minute": 26,
+        "dest": "折尾",
+        "type": "普通",
+        "arrival_time": "14:13",
+        "transfer_req": false,
+        "transfer_info": null,
+        "transfer_arrival": null
+      },
+      {
+        "hour": 13,
+        "minute": 36,
+        "dest": "門司港",
+        "type": "区",
+        "arrival_time": null,
+        "transfer_req": true,
+        "transfer_info": "福間で普通へ",
+        "transfer_arrival": "14:13着"
+      },
+      {
+        "hour": 13,
+        "minute": 36,
+        "dest": "門司港",
+        "type": "区",
+        "arrival_time": null,
+        "transfer_req": true,
+        "transfer_info": "福間で普通へ",
+        "transfer_arrival": "14:13着"
+      },
+      {
+        "hour": 13,
+        "minute": 44,
+        "dest": "福間",
+        "type": "普通",
+        "arrival_time": null,
+        "transfer_req": true,
+        "transfer_info": "福間で普通へ",
+        "transfer_arrival": "14:51着"
+      },
+      {
+        "hour": 14,
+        "minute": 5,
+        "dest": "福間",
+        "type": "普通",
+        "arrival_time": null,
+        "transfer_req": true,
+        "transfer_info": "福間で普通へ",
+        "transfer_arrival": "14:51着"
+      },
+      {
+        "hour": 14,
+        "minute": 14,
+        "dest": "門司港",
+        "type": "区",
+        "arrival_time": "14:51",
+        "transfer_req": false,
+        "transfer_info": null,
+        "transfer_arrival": null
+      },
+      {
+        "hour": 14,
+        "minute": 27,
+        "dest": "折尾",
+        "type": "普通",
+        "arrival_time": "15:14",
+        "transfer_req": false,
+        "transfer_info": null,
+        "transfer_arrival": null
+      },
+      {
+        "hour": 14,
+        "minute": 35,
+        "dest": "門司港",
+        "type": "区",
+        "arrival_time": null,
+        "transfer_req": true,
+        "transfer_info": "福間で普通へ",
+        "transfer_arrival": "15:14着"
+      },
+      {
+        "hour": 14,
+        "minute": 35,
+        "dest": "門司港",
+        "type": "区",
+        "arrival_time": null,
+        "transfer_req": true,
+        "transfer_info": "福間で普通へ",
+        "transfer_arrival": "15:14着"
+      },
+      {
+        "hour": 14,
+        "minute": 45,
+        "dest": "福間",
+        "type": "普通",
+        "arrival_time": null,
+        "transfer_req": true,
+        "transfer_info": "福間で普通へ",
+        "transfer_arrival": "15:51着"
+      },
+      {
+        "hour": 15,
+        "minute": 5,
+        "dest": "福間",
+        "type": "普通",
+        "arrival_time": null,
+        "transfer_req": true,
+        "transfer_info": "福間で普通へ",
+        "transfer_arrival": "15:51着"
+      },
+      {
+        "hour": 15,
+        "minute": 13,
+        "dest": "門司港",
+        "type": "区",
+        "arrival_time": "15:51",
+        "transfer_req": false,
+        "transfer_info": null,
+        "transfer_arrival": null
+      },
+      {
+        "hour": 15,
+        "minute": 27,
+        "dest": "折尾",
+        "type": "普通",
+        "arrival_time": "16:14",
+        "transfer_req": false,
+        "transfer_info": null,
+        "transfer_arrival": null
+      },
+      {
+        "hour": 15,
+        "minute": 35,
+        "dest": "門司港",
+        "type": "区",
+        "arrival_time": null,
+        "transfer_req": true,
+        "transfer_info": "福間で普通へ",
+        "transfer_arrival": "16:14着"
+      },
+      {
+        "hour": 15,
+        "minute": 35,
+        "dest": "門司港",
+        "type": "区",
+        "arrival_time": null,
+        "transfer_req": true,
+        "transfer_info": "福間で普通へ",
+        "transfer_arrival": "16:14着"
+      },
+      {
+        "hour": 15,
+        "minute": 43,
+        "dest": "福間",
+        "type": "普通",
+        "arrival_time": null,
+        "transfer_req": true,
+        "transfer_info": "福間で普通へ",
+        "transfer_arrival": "16:52着"
+      },
+      {
+        "hour": 16,
+        "minute": 5,
+        "dest": "福間",
+        "type": "普通",
+        "arrival_time": null,
+        "transfer_req": true,
+        "transfer_info": "福間で普通へ",
+        "transfer_arrival": "16:52着"
+      },
+      {
+        "hour": 16,
+        "minute": 13,
+        "dest": "門司港",
+        "type": "区",
+        "arrival_time": "16:52",
+        "transfer_req": false,
+        "transfer_info": null,
+        "transfer_arrival": null
+      },
+      {
+        "hour": 16,
+        "minute": 26,
+        "dest": "海老津",
+        "type": "普通",
+        "arrival_time": "17:14",
+        "transfer_req": false,
+        "transfer_info": null,
+        "transfer_arrival": null
+      },
+      {
+        "hour": 16,
+        "minute": 34,
+        "dest": "小倉",
+        "type": "区",
+        "arrival_time": "17:07",
+        "transfer_req": false,
+        "transfer_info": null,
+        "transfer_arrival": null
+      },
+      {
+        "hour": 16,
+        "minute": 51,
+        "dest": "福間",
+        "type": "普通",
+        "arrival_time": null,
+        "transfer_req": true,
+        "transfer_info": "福間で普通へ",
+        "transfer_arrival": "17:54着"
+      },
+      {
+        "hour": 16,
+        "minute": 57,
+        "dest": "小倉",
+        "type": "快",
+        "arrival_time": null,
+        "transfer_req": true,
+        "transfer_info": "福間で普通へ",
+        "transfer_arrival": "17:54着"
+      },
+      {
+        "hour": 16,
+        "minute": 57,
+        "dest": "小倉",
+        "type": "快",
+        "arrival_time": null,
+        "transfer_req": true,
+        "transfer_info": "福間で普通へ",
+        "transfer_arrival": "17:54着"
+      },
+      {
+        "hour": 17,
+        "minute": 9,
+        "dest": "福間",
+        "type": "普通",
+        "arrival_time": null,
+        "transfer_req": true,
+        "transfer_info": "福間で普通へ",
+        "transfer_arrival": null
+      },
+      {
+        "hour": 17,
+        "minute": 16,
+        "dest": "門司港",
+        "type": "区",
+        "arrival_time": "17:54",
+        "transfer_req": false,
+        "transfer_info": null,
+        "transfer_arrival": null
+      },
+      {
+        "hour": 17,
+        "minute": 30,
+        "dest": "海老津",
+        "type": "普通",
+        "arrival_time": "18:33",
+        "transfer_req": false,
+        "transfer_info": null,
+        "transfer_arrival": null
+      },
+      {
+        "hour": 17,
+        "minute": 36,
+        "dest": "門司港",
+        "type": "区",
+        "arrival_time": "18:15",
+        "transfer_req": false,
+        "transfer_info": null,
+        "transfer_arrival": null
+      },
+      {
+        "hour": 17,
+        "minute": 47,
+        "dest": "福間",
+        "type": "普通",
+        "arrival_time": null,
+        "transfer_req": true,
+        "transfer_info": "福間で普通へ",
+        "transfer_arrival": null
+      },
+      {
+        "hour": 17,
+        "minute": 53,
+        "dest": "小倉",
+        "type": "快",
+        "arrival_time": null,
+        "transfer_req": true,
+        "transfer_info": "福間で普通へ",
+        "transfer_arrival": "18:33着"
+      },
+      {
+        "hour": 17,
+        "minute": 53,
+        "dest": "小倉",
+        "type": "快",
+        "arrival_time": null,
+        "transfer_req": true,
+        "transfer_info": "福間で普通へ",
+        "transfer_arrival": "18:33着"
+      },
+      {
+        "hour": 18,
+        "minute": 5,
+        "dest": "門司港",
+        "type": "普通",
+        "arrival_time": "18:51",
+        "transfer_req": false,
+        "transfer_info": null,
+        "transfer_arrival": null
+      },
+      {
+        "hour": 18,
+        "minute": 12,
+        "dest": "福間",
+        "type": "普通",
+        "arrival_time": null,
+        "transfer_req": true,
+        "transfer_info": "福間で普通へ",
+        "transfer_arrival": null
+      },
+      {
+        "hour": 18,
+        "minute": 26,
+        "dest": "海老津",
+        "type": "普通",
+        "arrival_time": "19:17",
+        "transfer_req": false,
+        "transfer_info": null,
+        "transfer_arrival": null
+      },
+      {
+        "hour": 18,
+        "minute": 32,
+        "dest": "門司港",
+        "type": "区",
+        "arrival_time": "19:10",
+        "transfer_req": false,
+        "transfer_info": null,
+        "transfer_arrival": null
+      },
+      {
+        "hour": 18,
+        "minute": 45,
+        "dest": "福間",
+        "type": "普通",
+        "arrival_time": null,
+        "transfer_req": true,
+        "transfer_info": "福間で普通へ",
+        "transfer_arrival": null
+      },
+      {
+        "hour": 18,
+        "minute": 48,
+        "dest": "門司港",
+        "type": "快",
+        "arrival_time": null,
+        "transfer_req": true,
+        "transfer_info": "福間で普通へ",
+        "transfer_arrival": null
+      },
+      {
+        "hour": 18,
+        "minute": 48,
+        "dest": "門司港",
+        "type": "快",
+        "arrival_time": null,
+        "transfer_req": true,
+        "transfer_info": "福間で普通へ",
+        "transfer_arrival": null
+      },
+      {
+        "hour": 19,
+        "minute": 5,
+        "dest": "門司港",
+        "type": "普通",
+        "arrival_time": "19:52",
+        "transfer_req": false,
+        "transfer_info": null,
+        "transfer_arrival": null
+      },
+      {
+        "hour": 19,
+        "minute": 13,
+        "dest": "福間",
+        "type": "普通",
+        "arrival_time": null,
+        "transfer_req": true,
+        "transfer_info": "福間で普通へ",
+        "transfer_arrival": null
+      },
+      {
+        "hour": 19,
+        "minute": 26,
+        "dest": "海老津",
+        "type": "普通",
+        "arrival_time": "20:17",
+        "transfer_req": false,
+        "transfer_info": null,
+        "transfer_arrival": null
+      },
+      {
+        "hour": 19,
+        "minute": 32,
+        "dest": "小倉",
+        "type": "区",
+        "arrival_time": "20:10",
+        "transfer_req": false,
+        "transfer_info": null,
+        "transfer_arrival": null
+      },
+      {
+        "hour": 19,
+        "minute": 48,
+        "dest": "福間",
+        "type": "普通",
+        "arrival_time": null,
+        "transfer_req": true,
+        "transfer_info": "福間で普通へ",
+        "transfer_arrival": null
+      },
+      {
+        "hour": 19,
+        "minute": 54,
+        "dest": "門司港",
+        "type": "快",
+        "arrival_time": null,
+        "transfer_req": true,
+        "transfer_info": "福間で普通へ",
+        "transfer_arrival": null
+      },
+      {
+        "hour": 19,
+        "minute": 54,
+        "dest": "門司港",
+        "type": "快",
+        "arrival_time": null,
+        "transfer_req": true,
+        "transfer_info": "福間で普通へ",
+        "transfer_arrival": null
+      },
+      {
+        "hour": 20,
+        "minute": 5,
+        "dest": "門司港",
+        "type": "普通",
+        "arrival_time": "20:50",
+        "transfer_req": false,
+        "transfer_info": null,
+        "transfer_arrival": null
+      },
+      {
+        "hour": 20,
+        "minute": 14,
+        "dest": "福間",
+        "type": "普通",
+        "arrival_time": null,
+        "transfer_req": true,
+        "transfer_info": "福間で普通へ",
+        "transfer_arrival": null
+      },
+      {
+        "hour": 20,
+        "minute": 32,
+        "dest": "小倉",
+        "type": "区",
+        "arrival_time": "21:16",
+        "transfer_req": false,
+        "transfer_info": null,
+        "transfer_arrival": null
+      },
+      {
+        "hour": 20,
+        "minute": 47,
+        "dest": "小倉",
+        "type": "普通",
+        "arrival_time": "21:39",
+        "transfer_req": false,
+        "transfer_info": null,
+        "transfer_arrival": null
+      },
+      {
+        "hour": 20,
+        "minute": 53,
+        "dest": "小倉",
+        "type": "快",
+        "arrival_time": null,
+        "transfer_req": true,
+        "transfer_info": "福間で普通へ",
+        "transfer_arrival": null
+      },
+      {
+        "hour": 20,
+        "minute": 53,
+        "dest": "小倉",
+        "type": "快",
+        "arrival_time": null,
+        "transfer_req": true,
+        "transfer_info": "福間で普通へ",
+        "transfer_arrival": null
+      },
+      {
+        "hour": 21,
+        "minute": 17,
+        "dest": "門司港",
+        "type": "普通",
+        "arrival_time": "22:01",
+        "transfer_req": false,
+        "transfer_info": null,
+        "transfer_arrival": null
+      },
+      {
+        "hour": 21,
+        "minute": 35,
+        "dest": "小倉",
+        "type": "普通",
+        "arrival_time": "22:21",
+        "transfer_req": false,
+        "transfer_info": null,
+        "transfer_arrival": null
+      },
+      {
+        "hour": 21,
+        "minute": 40,
+        "dest": "門司港",
+        "type": "快",
+        "arrival_time": null,
+        "transfer_req": true,
+        "transfer_info": "福間で普通へ",
+        "transfer_arrival": "22:21着"
+      },
+      {
+        "hour": 21,
+        "minute": 54,
+        "dest": "門司港",
+        "type": "普通",
+        "arrival_time": "22:51",
+        "transfer_req": false,
+        "transfer_info": null,
+        "transfer_arrival": null
+      },
+      {
+        "hour": 22,
+        "minute": 15,
+        "dest": "門司港",
+        "type": "快",
+        "arrival_time": null,
+        "transfer_req": true,
+        "transfer_info": "福間で普通へ",
+        "transfer_arrival": null
+      },
+      {
+        "hour": 22,
+        "minute": 29,
+        "dest": "門司港",
+        "type": "普通",
+        "arrival_time": "23:18",
+        "transfer_req": false,
+        "transfer_info": null,
+        "transfer_arrival": null
+      },
+      {
+        "hour": 22,
+        "minute": 29,
+        "dest": "門司港",
+        "type": "普通",
+        "arrival_time": "23:19",
+        "transfer_req": false,
+        "transfer_info": null,
+        "transfer_arrival": null
+      },
+      {
+        "hour": 22,
+        "minute": 47,
+        "dest": "赤間",
+        "type": "普通",
+        "arrival_time": null,
+        "transfer_req": true,
+        "transfer_info": "福間で普通へ",
+        "transfer_arrival": null
+      },
+      {
+        "hour": 23,
+        "minute": 3,
+        "dest": "門司港",
+        "type": "普通",
+        "arrival_time": "23:46",
+        "transfer_req": false,
+        "transfer_info": null,
+        "transfer_arrival": null
+      },
+      {
+        "hour": 23,
+        "minute": 33,
+        "dest": "折尾",
+        "type": "普通",
+        "arrival_time": "0:16",
+        "transfer_req": false,
+        "transfer_info": null,
+        "transfer_arrival": null
+      },
+      {
+        "hour": 24,
+        "minute": 4,
+        "dest": "福間",
+        "type": "普通",
+        "arrival_time": null,
+        "transfer_req": true,
+        "transfer_info": "福間で普通へ",
+        "transfer_arrival": "5:53着"
+      }
     ]
   },
   "traffic_status": {
