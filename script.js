@@ -104,42 +104,39 @@ async function updateBoard(scheduleData) {
     lastTopTrainId = newTopTrainId;
 }
 
+// Consolidated Status Display Logic
 function updateStatusDisplay(statusData) {
     const msgContainer = document.getElementById('scroll-message');
     const msgBox = document.querySelector('.scroll-message-container');
 
+    // 1. Scrolling Message & Color
     if (statusData && statusData.is_delay) { // Matched Scraper key 'is_delay'
-        msgContainer.textContent = statusData.message; // Matched Scraper key 'message'
-        msgContainer.style.animationDuration = "10s"; // 遅延時は少し速く
-
-        // スタイル: 遅延 (赤)
+        msgContainer.textContent = statusData.message;
+        msgContainer.style.animationDuration = "10s";
         msgBox.classList.remove('normal');
-        msgBox.classList.add('delayed'); // Add delayed class
+        msgBox.classList.add('delayed');
     } else {
-        // Normal or Fallback
         msgContainer.textContent = (statusData && statusData.message) ? statusData.message : "現在、鹿児島本線は通常通り運行しています。";
-        msgContainer.style.animationDuration = "15s"; // 通常速度
-
-        // スタイル: 平常 (緑)
+        msgContainer.style.animationDuration = "15s";
         msgBox.classList.remove('delayed');
         msgBox.classList.add('normal');
     }
 
-    // Timestamp is optional or not provided by current scraper
+    // 2. Last Updated Timestamp
+    const lastUpdatedEl = document.getElementById('last-updated');
     if (statusData && statusData.timestamp) {
-        document.getElementById('last-updated').textContent = `情報更新: ${statusData.timestamp}`;
-    }
-
-    // Weather from server (for Android 5.0 compatibility)
-    if (statusData && statusData.weather) {
-        const w = statusData.weather;
-        // Check if w is object (new format) or string (old fallback)
-        if (typeof w === 'object') {
-            document.getElementById('current-weather').textContent = `${w.temp}° / ${w.precip}%`;
+        lastUpdatedEl.textContent = `情報更新: ${statusData.timestamp}`;
+    } else {
+        // Debug fallback: Show WHY it is missing
+        if (!statusData) {
+            lastUpdatedEl.textContent = "Data: NULL";
         } else {
-            document.getElementById('current-weather').textContent = w;
+            lastUpdatedEl.textContent = "TS: MISSING";
         }
     }
+
+    // 3. Weather (Client-side fetch handles this independently, so we ignore server weather)
+    // Server weather logic removed to avoid conflict.
 }
 
 function renderTrains(trains, statusData) {
@@ -276,14 +273,45 @@ document.addEventListener('visibilitychange', async () => {
     }
 });
 
-// Try to acquire logic on interaction (required by most browsers)
+// Try to acquire logic on interaction
 document.addEventListener('click', requestWakeLock);
 document.addEventListener('touchstart', requestWakeLock);
 
 
+// Client-Side Weather Fetching (Direct Open-Meteo)
+function fetchWeather() {
+    const lat = 33.81;
+    const lon = 130.54;
+    const url = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current=temperature_2m,weather_code&hourly=precipitation_probability&timezone=Asia/Tokyo&forecast_hours=1`;
+
+    console.log("Fetching weather client-side...");
+    fetch(url)
+        .then(response => response.json())
+        .then(data => {
+            try {
+                const temp = Math.round(data.current.temperature_2m);
+                const precip = data.hourly.precipitation_probability[0] || 0;
+                const weatherText = `${temp}° / ${precip}%`;
+
+                document.getElementById('current-weather').textContent = weatherText;
+                console.log("Weather updated:", weatherText);
+            } catch (e) {
+                console.error("Weather parse error:", e);
+            }
+        })
+        .catch(err => {
+            console.error("Weather fetch failed:", err);
+        });
+}
+
+
 document.addEventListener('DOMContentLoaded', () => {
     init();
-    requestWakeLock(); // Try automatically just in case
+    requestWakeLock();
+
+    // Weather Init
+    fetchWeather();
+    setInterval(fetchWeather, 30 * 60 * 1000); // Every 30 mins
 
     // Check sleep mode every minute
     setInterval(checkSleepMode, 60000);
@@ -311,72 +339,7 @@ function checkSleepMode() {
         const randomY = Math.floor(Math.random() * 10) - 5; // -5 to 5 vh
         sleepClock.style.transform = `translate(${randomX}vw, ${randomY}vh)`;
 
-    }
-}
-
-
-// Client-Side Weather Fetching (Direct Open-Meteo)
-function fetchWeather() {
-    const lat = 33.81;
-    const lon = 130.54;
-    const url = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current=temperature_2m,weather_code&hourly=precipitation_probability&timezone=Asia/Tokyo&forecast_hours=1`;
-
-    console.log("Fetching weather client-side...");
-    fetch(url)
-        .then(response => response.json())
-        .then(data => {
-            try {
-                const temp = Math.round(data.current.temperature_2m);
-                const precip = data.hourly.precipitation_probability[0] || 0;
-                const weatherText = `${temp}° / ${precip}%`;
-
-                document.getElementById('current-weather').textContent = weatherText;
-                console.log("Weather updated:", weatherText);
-            } catch (e) {
-                console.error("Weather parse error:", e);
-                // Keep default or previous
-            }
-        })
-        .catch(err => {
-            console.error("Weather fetch failed:", err);
-        });
-}
-
-// Override updateStatusDisplay behavior to NOT overwrite weather from server if it is missing
-const originalUpdateStatusDisplay = updateStatusDisplay;
-updateStatusDisplay = function (statusData) {
-    // Call original logic handling text/scroll
-    const msgContainer = document.getElementById('scroll-message');
-    const msgBox = document.querySelector('.scroll-message-container');
-
-    if (statusData && statusData.is_delay) {
-        msgContainer.textContent = statusData.message;
-        msgContainer.style.animationDuration = "10s";
-        msgBox.classList.remove('normal');
-        msgBox.classList.add('delayed');
     } else {
-        msgContainer.textContent = (statusData && statusData.message) ? statusData.message : "現在、鹿児島本線は通常通り運行しています。";
-        msgContainer.style.animationDuration = "15s";
-        msgBox.classList.remove('delayed');
-        msgBox.classList.add('normal');
+        overlay.classList.add('hidden');
     }
-
-    if (statusData && statusData.timestamp) {
-        document.getElementById('last-updated').textContent = `情報更新: ${statusData.timestamp}`;
-    }
-
-    // IGNORE server weather data to rely on client fetch
 }
-
-document.addEventListener('DOMContentLoaded', () => {
-    init();
-    requestWakeLock();
-
-    // Weather Init
-    fetchWeather();
-    setInterval(fetchWeather, 30 * 60 * 1000); // Every 30 mins
-
-    // Check sleep mode every minute
-    setInterval(checkSleepMode, 60000);
-    checkSleepMode();
-});
