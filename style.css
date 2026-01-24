@@ -452,10 +452,11 @@ body {
 }
 
 .last-updated {
+    position: fixed;
+    bottom: 5px;
+    right: 10px;
     text-align: right;
-    width: 95%;
     color: var(--text-secondary);
     font-size: 1.5vh;
-    margin-top: 5px;
-    padding-right: 10px;
+    z-index: 100;
 }
