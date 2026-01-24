@@ -118,7 +118,7 @@ body {
 
 .board-header {
     display: grid;
-    grid-template-columns: 0.8fr 1.6fr 2.0fr 1.6fr;
+    grid-template-columns: 1.5fr 2.5fr 2.0fr 4.0fr;
     padding: 0.5vh 10px;
     /* Minimal padding */
     background-color: #21262d;
@@ -142,6 +142,11 @@ body {
     /* Force remove padding from .col-type */
     margin: 0 !important;
     line-height: normal !important;
+}
+
+.board-header span.col-status {
+    justify-content: flex-start !important;
+    padding-left: 20px !important;
 }
 
 .departure-list {
@@ -172,7 +177,7 @@ body {
 .departure-row {
     flex-grow: 1;
     display: grid;
-    grid-template-columns: 0.8fr 1.6fr 2.0fr 1.6fr;
+    grid-template-columns: 1.5fr 2.5fr 2.0fr 4.0fr;
     padding: 0 10px;
     /* Minimal padding */
     font-size: 16vh;
@@ -193,11 +198,10 @@ body {
 }
 
 .col-dest {
-    font-size: 1.1em;
-    /* 10% larger than row */
+    font-size: 0.9em;
+    /* Reduced from 1.1em */
     font-weight: 700;
-    padding-left: 4vw;
-    /* Add significant spacing */
+    /* padding-left removed to allow centering */
 }
 
 .departure-row:last-child {
@@ -257,9 +261,11 @@ body {
 }
 
 .departure-row .col-status {
-    font-size: 0.4em;
-    /* Much smaller status text */
+    font-size: 0.45em;
+    /* Slightly increased dependent on row size */
     text-align: left;
+    padding-left: 20px;
+    /* Centered to match header */
 }
 
 .status-blink {
@@ -284,14 +290,20 @@ body {
 
 .scroll-message-container {
     background-color: var(--accent-blue);
-    padding: 1vh 0;
+    padding: 0.2vh 0;
     overflow: hidden;
     white-space: nowrap;
     color: #fff;
-    font-size: 5vh;
+    font-size: 3.5vh;
     /* Increased */
     font-weight: 600;
 }
+
+.scroll-message-container.delayed {
+    background-color: #ff0000 !important;
+    /* Red for delay */
+}
+
 
 .scroll-message-container.normal {
     background-color: var(--accent-green);
@@ -422,4 +434,28 @@ body {
     font-size: 3vw;
     margin-bottom: 20px;
     color: #222;
+}
+
+/* Transfer indication */
+.transfer-req {
+    color: #ff9800;
+    /* Orange */
+    font-weight: bold;
+}
+
+/* Transfer Arrival Time */
+.transfer-arrival {
+    font-size: 0.9em;
+    color: #fff;
+    /* White to match non-transfer arrival */
+    font-weight: normal;
+}
+
+.last-updated {
+    text-align: right;
+    width: 95%;
+    color: var(--text-secondary);
+    font-size: 1.5vh;
+    margin-top: 5px;
+    padding-right: 10px;
 }
