@@ -1,0 +1,2021 @@
+{
+  "station": "吉塚",
+  "direction": "博多",
+  "schedule": {
+    "weekday": [
+      {
+        "hour": 5,
+        "minute": 42,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 5,
+        "minute": 47,
+        "type": "普通",
+        "dest": "鳥栖"
+      },
+      {
+        "hour": 6,
+        "minute": 12,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 6,
+        "minute": 13,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 6,
+        "minute": 15,
+        "type": "快速",
+        "dest": "博多"
+      },
+      {
+        "hour": 6,
+        "minute": 28,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 6,
+        "minute": 39,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 6,
+        "minute": 49,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 6,
+        "minute": 59,
+        "type": "普通",
+        "dest": "荒尾(熊本県)"
+      },
+      {
+        "hour": 7,
+        "minute": 0,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 7,
+        "minute": 6,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 7,
+        "minute": 14,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 7,
+        "minute": 21,
+        "type": "普通",
+        "dest": "南福岡"
+      },
+      {
+        "hour": 7,
+        "minute": 29,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 7,
+        "minute": 30,
+        "type": "普通",
+        "dest": "二日市"
+      },
+      {
+        "hour": 7,
+        "minute": 38,
+        "type": "快速",
+        "dest": "南福岡"
+      },
+      {
+        "hour": 7,
+        "minute": 44,
+        "type": "普通",
+        "dest": "久留米"
+      },
+      {
+        "hour": 7,
+        "minute": 46,
+        "type": "快速",
+        "dest": "博多"
+      },
+      {
+        "hour": 7,
+        "minute": 48,
+        "type": "快速",
+        "dest": "羽犬塚"
+      },
+      {
+        "hour": 7,
+        "minute": 55,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 7,
+        "minute": 57,
+        "type": "普通",
+        "dest": "南福岡"
+      },
+      {
+        "hour": 8,
+        "minute": 1,
+        "dest": "二日市",
+        "type": "普通",
+        "dest": "二日市"
+      },
+      {
+        "hour": 8,
+        "minute": 8,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 8,
+        "minute": 11,
+        "type": "区間快速",
+        "dest": "博多"
+      },
+      {
+        "hour": 8,
+        "minute": 14,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 8,
+        "minute": 15,
+        "type": "快速",
+        "dest": "南福岡"
+      },
+      {
+        "hour": 8,
+        "minute": 20,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 8,
+        "minute": 23,
+        "type": "普通",
+        "dest": "南福岡"
+      },
+      {
+        "hour": 8,
+        "minute": 26,
+        "type": "快速",
+        "dest": "博多"
+      },
+      {
+        "hour": 8,
+        "minute": 30,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 8,
+        "minute": 37,
+        "type": "快速",
+        "dest": "鳥栖"
+      },
+      {
+        "hour": 8,
+        "minute": 38,
+        "type": "快速",
+        "dest": "博多"
+      },
+      {
+        "hour": 8,
+        "minute": 44,
+        "type": "普通",
+        "dest": "二日市"
+      },
+      {
+        "hour": 8,
+        "minute": 48,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 8,
+        "minute": 52,
+        "type": "普通",
+        "dest": "鳥栖"
+      },
+      {
+        "hour": 8,
+        "minute": 56,
+        "type": "快速",
+        "dest": "南福岡"
+      },
+      {
+        "hour": 8,
+        "minute": 57,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 9,
+        "minute": 7,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 9,
+        "minute": 9,
+        "type": "普通",
+        "dest": "二日市"
+      },
+      {
+        "hour": 9,
+        "minute": 15,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 9,
+        "minute": 17,
+        "type": "区間快速",
+        "dest": "鳥栖"
+      },
+      {
+        "hour": 9,
+        "minute": 22,
+        "type": "普通",
+        "dest": "南福岡"
+      },
+      {
+        "hour": 9,
+        "minute": 24,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 9,
+        "minute": 32,
+        "type": "普通",
+        "dest": "鳥栖"
+      },
+      {
+        "hour": 9,
+        "minute": 33,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 9,
+        "minute": 47,
+        "type": "普通",
+        "dest": "久留米"
+      },
+      {
+        "hour": 9,
+        "minute": 50,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 9,
+        "minute": 56,
+        "type": "区間快速",
+        "dest": "二日市"
+      },
+      {
+        "hour": 10,
+        "minute": 3,
+        "type": "快速",
+        "dest": "博多"
+      },
+      {
+        "hour": 10,
+        "minute": 11,
+        "type": "普通",
+        "dest": "南福岡"
+      },
+      {
+        "hour": 10,
+        "minute": 15,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 10,
+        "minute": 19,
+        "type": "区間快速",
+        "dest": "羽犬塚"
+      },
+      {
+        "hour": 10,
+        "minute": 24,
+        "type": "快速",
+        "dest": "博多"
+      },
+      {
+        "hour": 10,
+        "minute": 32,
+        "type": "普通",
+        "dest": "荒木"
+      },
+      {
+        "hour": 10,
+        "minute": 46,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 10,
+        "minute": 50,
+        "type": "区間快速",
+        "dest": "羽犬塚"
+      },
+      {
+        "hour": 11,
+        "minute": 2,
+        "type": "普通",
+        "dest": "二日市"
+      },
+      {
+        "hour": 11,
+        "minute": 14,
+        "type": "快速",
+        "dest": "博多"
+      },
+      {
+        "hour": 11,
+        "minute": 20,
+        "type": "区間快速",
+        "dest": "鳥栖"
+      },
+      {
+        "hour": 11,
+        "minute": 29,
+        "type": "普通",
+        "dest": "二日市"
+      },
+      {
+        "hour": 11,
+        "minute": 38,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 11,
+        "minute": 42,
+        "type": "普通",
+        "dest": "久留米"
+      },
+      {
+        "hour": 11,
+        "minute": 56,
+        "type": "区間快速",
+        "dest": "博多"
+      },
+      {
+        "hour": 12,
+        "minute": 0,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 12,
+        "minute": 5,
+        "type": "普通",
+        "dest": "二日市"
+      },
+      {
+        "hour": 12,
+        "minute": 14,
+        "type": "快速",
+        "dest": "博多"
+      },
+      {
+        "hour": 12,
+        "minute": 22,
+        "type": "区間快速",
+        "dest": "鳥栖"
+      },
+      {
+        "hour": 12,
+        "minute": 31,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 12,
+        "minute": 36,
+        "type": "普通",
+        "dest": "二日市"
+      },
+      {
+        "hour": 12,
+        "minute": 52,
+        "type": "普通",
+        "dest": "久留米"
+      },
+      {
+        "hour": 12,
+        "minute": 55,
+        "type": "区間快速",
+        "dest": "羽犬塚"
+      },
+      {
+        "hour": 13,
+        "minute": 0,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 13,
+        "minute": 6,
+        "type": "普通",
+        "dest": "二日市"
+      },
+      {
+        "hour": 13,
+        "minute": 14,
+        "type": "快速",
+        "dest": "博多"
+      },
+      {
+        "hour": 13,
+        "minute": 22,
+        "type": "区間快速",
+        "dest": "鳥栖"
+      },
+      {
+        "hour": 13,
+        "minute": 31,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 13,
+        "minute": 35,
+        "type": "普通",
+        "dest": "二日市"
+      },
+      {
+        "hour": 13,
+        "minute": 52,
+        "type": "普通",
+        "dest": "久留米"
+      },
+      {
+        "hour": 13,
+        "minute": 55,
+        "type": "区間快速",
+        "dest": "羽犬塚"
+      },
+      {
+        "hour": 13,
+        "minute": 56,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 14,
+        "minute": 6,
+        "type": "普通",
+        "dest": "二日市"
+      },
+      {
+        "hour": 14,
+        "minute": 14,
+        "type": "快速",
+        "dest": "博多"
+      },
+      {
+        "hour": 14,
+        "minute": 20,
+        "type": "区間快速",
+        "dest": "鳥栖"
+      },
+      {
+        "hour": 14,
+        "minute": 31,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 14,
+        "minute": 34,
+        "type": "普通",
+        "dest": "二日市"
+      },
+      {
+        "hour": 14,
+        "minute": 52,
+        "type": "普通",
+        "dest": "久留米"
+      },
+      {
+        "hour": 14,
+        "minute": 55,
+        "type": "区間快速",
+        "dest": "羽犬塚"
+      },
+      {
+        "hour": 14,
+        "minute": 56,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 15,
+        "minute": 6,
+        "type": "普通",
+        "dest": "二日市"
+      },
+      {
+        "hour": 15,
+        "minute": 14,
+        "type": "快速",
+        "dest": "博多"
+      },
+      {
+        "hour": 15,
+        "minute": 20,
+        "type": "区間快速",
+        "dest": "鳥栖"
+      },
+      {
+        "hour": 15,
+        "minute": 31,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 15,
+        "minute": 33,
+        "type": "普通",
+        "dest": "鳥栖"
+      },
+      {
+        "hour": 15,
+        "minute": 55,
+        "type": "普通",
+        "dest": "鳥栖"
+      },
+      {
+        "hour": 15,
+        "minute": 57,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 15,
+        "minute": 58,
+        "type": "区間快速",
+        "dest": "二日市"
+      },
+      {
+        "hour": 16,
+        "minute": 6,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 16,
+        "minute": 14,
+        "type": "快速",
+        "dest": "博多"
+      },
+      {
+        "hour": 16,
+        "minute": 20,
+        "type": "区間快速",
+        "dest": "久留米"
+      },
+      {
+        "hour": 16,
+        "minute": 33,
+        "type": "普通",
+        "dest": "二日市"
+      },
+      {
+        "hour": 16,
+        "minute": 46,
+        "type": "普通",
+        "dest": "鳥栖"
+      },
+      {
+        "hour": 16,
+        "minute": 50,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 16,
+        "minute": 59,
+        "type": "区間快速",
+        "dest": "羽犬塚"
+      },
+      {
+        "hour": 17,
+        "minute": 1,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 17,
+        "minute": 7,
+        "type": "普通",
+        "dest": "荒木"
+      },
+      {
+        "hour": 17,
+        "minute": 12,
+        "type": "快速",
+        "dest": "博多"
+      },
+      {
+        "hour": 17,
+        "minute": 14,
+        "type": "快速",
+        "dest": "羽犬塚"
+      },
+      {
+        "hour": 17,
+        "minute": 19,
+        "type": "普通",
+        "dest": "鳥栖"
+      },
+      {
+        "hour": 17,
+        "minute": 25,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 17,
+        "minute": 31,
+        "type": "普通",
+        "dest": "南福岡"
+      },
+      {
+        "hour": 17,
+        "minute": 34,
+        "type": "普通",
+        "dest": "二日市"
+      },
+      {
+        "hour": 17,
+        "minute": 36,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 17,
+        "minute": 40,
+        "type": "普通",
+        "dest": "大牟田"
+      },
+      {
+        "hour": 17,
+        "minute": 46,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 17,
+        "minute": 49,
+        "type": "普通",
+        "dest": "早岐"
+      },
+      {
+        "hour": 17,
+        "minute": 56,
+        "type": "区間快速",
+        "dest": "久留米"
+      },
+      {
+        "hour": 17,
+        "minute": 58,
+        "type": "快速",
+        "dest": "博多"
+      },
+      {
+        "hour": 18,
+        "minute": 4,
+        "type": "普通",
+        "dest": "鳥栖"
+      },
+      {
+        "hour": 18,
+        "minute": 13,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 18,
+        "minute": 18,
+        "type": "快速",
+        "dest": "大牟田"
+      },
+      {
+        "hour": 18,
+        "minute": 26,
+        "type": "普通",
+        "dest": "鳥栖"
+      },
+      {
+        "hour": 18,
+        "minute": 34,
+        "type": "区間快速",
+        "dest": "羽犬塚"
+      },
+      {
+        "hour": 18,
+        "minute": 36,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 18,
+        "minute": 46,
+        "type": "普通",
+        "dest": "荒木"
+      },
+      {
+        "hour": 18,
+        "minute": 59,
+        "type": "区間快速",
+        "dest": "久留米"
+      },
+      {
+        "hour": 19,
+        "minute": 0,
+        "type": "快速",
+        "dest": "博多"
+      },
+      {
+        "hour": 19,
+        "minute": 8,
+        "type": "普通",
+        "dest": "鳥栖"
+      },
+      {
+        "hour": 19,
+        "minute": 12,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 19,
+        "minute": 18,
+        "type": "普通",
+        "dest": "鳥栖"
+      },
+      {
+        "hour": 19,
+        "minute": 22,
+        "type": "快速",
+        "dest": "荒尾(熊本県)"
+      },
+      {
+        "hour": 19,
+        "minute": 23,
+        "type": "快速",
+        "dest": "博多"
+      },
+      {
+        "hour": 19,
+        "minute": 34,
+        "type": "区間快速",
+        "dest": "久留米"
+      },
+      {
+        "hour": 19,
+        "minute": 36,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 19,
+        "minute": 44,
+        "type": "普通",
+        "dest": "久留米"
+      },
+      {
+        "hour": 19,
+        "minute": 47,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 19,
+        "minute": 55,
+        "type": "区間快速",
+        "dest": "荒尾(熊本県)"
+      },
+      {
+        "hour": 20,
+        "minute": 0,
+        "type": "快速",
+        "dest": "博多"
+      },
+      {
+        "hour": 20,
+        "minute": 7,
+        "type": "普通",
+        "dest": "鳥栖"
+      },
+      {
+        "hour": 20,
+        "minute": 12,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 20,
+        "minute": 17,
+        "type": "快速",
+        "dest": "羽犬塚"
+      },
+      {
+        "hour": 20,
+        "minute": 22,
+        "type": "快速",
+        "dest": "博多"
+      },
+      {
+        "hour": 20,
+        "minute": 31,
+        "type": "普通",
+        "dest": "二日市"
+      },
+      {
+        "hour": 20,
+        "minute": 38,
+        "type": "区間快速",
+        "dest": "荒木"
+      },
+      {
+        "hour": 20,
+        "minute": 43,
+        "type": "普通",
+        "dest": "鳥栖"
+      },
+      {
+        "hour": 20,
+        "minute": 51,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 21,
+        "minute": 0,
+        "type": "普通",
+        "dest": "早岐"
+      },
+      {
+        "hour": 21,
+        "minute": 4,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 21,
+        "minute": 9,
+        "type": "快速",
+        "dest": "荒木"
+      },
+      {
+        "hour": 21,
+        "minute": 15,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 21,
+        "minute": 17,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 21,
+        "minute": 23,
+        "type": "普通",
+        "dest": "二日市"
+      },
+      {
+        "hour": 21,
+        "minute": 33,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 21,
+        "minute": 40,
+        "type": "普通",
+        "dest": "羽犬塚"
+      },
+      {
+        "hour": 21,
+        "minute": 45,
+        "type": "快速",
+        "dest": "博多"
+      },
+      {
+        "hour": 21,
+        "minute": 47,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 21,
+        "minute": 56,
+        "type": "普通",
+        "dest": "江北(佐賀県)"
+      },
+      {
+        "hour": 22,
+        "minute": 4,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 22,
+        "minute": 16,
+        "type": "普通",
+        "dest": "久留米"
+      },
+      {
+        "hour": 22,
+        "minute": 20,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 22,
+        "minute": 38,
+        "type": "普通",
+        "dest": "二日市"
+      },
+      {
+        "hour": 22,
+        "minute": 45,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 22,
+        "minute": 46,
+        "type": "区間快速",
+        "dest": "荒尾(熊本県)"
+      },
+      {
+        "hour": 23,
+        "minute": 8,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 23,
+        "minute": 12,
+        "type": "普通",
+        "dest": "久留米"
+      },
+      {
+        "hour": 23,
+        "minute": 32,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 23,
+        "minute": 39,
+        "type": "普通",
+        "dest": "久留米"
+      },
+      {
+        "hour": 23,
+        "minute": 42,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 24,
+        "minute": 12,
+        "type": "普通",
+        "dest": "南福岡"
+      }
+    ],
+    "holiday": [
+      {
+        "hour": 5,
+        "minute": 42,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 5,
+        "minute": 47,
+        "type": "普通",
+        "dest": "鳥栖"
+      },
+      {
+        "hour": 6,
+        "minute": 12,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 6,
+        "minute": 13,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 6,
+        "minute": 15,
+        "type": "快速",
+        "dest": "博多"
+      },
+      {
+        "hour": 6,
+        "minute": 28,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 6,
+        "minute": 39,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 6,
+        "minute": 49,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 6,
+        "minute": 59,
+        "type": "普通",
+        "dest": "荒尾(熊本県)"
+      },
+      {
+        "hour": 7,
+        "minute": 0,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 7,
+        "minute": 6,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 7,
+        "minute": 14,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 7,
+        "minute": 21,
+        "type": "普通",
+        "dest": "南福岡"
+      },
+      {
+        "hour": 7,
+        "minute": 29,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 7,
+        "minute": 30,
+        "type": "普通",
+        "dest": "二日市"
+      },
+      {
+        "hour": 7,
+        "minute": 38,
+        "type": "快速",
+        "dest": "南福岡"
+      },
+      {
+        "hour": 7,
+        "minute": 44,
+        "type": "普通",
+        "dest": "久留米"
+      },
+      {
+        "hour": 7,
+        "minute": 46,
+        "type": "快速",
+        "dest": "博多"
+      },
+      {
+        "hour": 7,
+        "minute": 48,
+        "type": "快速",
+        "dest": "羽犬塚"
+      },
+      {
+        "hour": 7,
+        "minute": 55,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 7,
+        "minute": 57,
+        "type": "普通",
+        "dest": "南福岡"
+      },
+      {
+        "hour": 8,
+        "minute": 1,
+        "type": "普通",
+        "dest": "二日市"
+      },
+      {
+        "hour": 8,
+        "minute": 8,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 8,
+        "minute": 11,
+        "type": "区間快速",
+        "dest": "博多"
+      },
+      {
+        "hour": 8,
+        "minute": 14,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 8,
+        "minute": 15,
+        "type": "快速",
+        "dest": "南福岡"
+      },
+      {
+        "hour": 8,
+        "minute": 20,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 8,
+        "minute": 26,
+        "type": "快速",
+        "dest": "博多"
+      },
+      {
+        "hour": 8,
+        "minute": 30,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 8,
+        "minute": 37,
+        "type": "快速",
+        "dest": "鳥栖"
+      },
+      {
+        "hour": 8,
+        "minute": 38,
+        "type": "快速",
+        "dest": "博多"
+      },
+      {
+        "hour": 8,
+        "minute": 44,
+        "type": "普通",
+        "dest": "二日市"
+      },
+      {
+        "hour": 8,
+        "minute": 48,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 8,
+        "minute": 52,
+        "type": "普通",
+        "dest": "鳥栖"
+      },
+      {
+        "hour": 8,
+        "minute": 56,
+        "type": "快速",
+        "dest": "南福岡"
+      },
+      {
+        "hour": 8,
+        "minute": 57,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 9,
+        "minute": 7,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 9,
+        "minute": 9,
+        "type": "普通",
+        "dest": "二日市"
+      },
+      {
+        "hour": 9,
+        "minute": 15,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 9,
+        "minute": 17,
+        "type": "区間快速",
+        "dest": "鳥栖"
+      },
+      {
+        "hour": 9,
+        "minute": 22,
+        "type": "普通",
+        "dest": "南福岡"
+      },
+      {
+        "hour": 9,
+        "minute": 24,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 9,
+        "minute": 32,
+        "type": "普通",
+        "dest": "鳥栖"
+      },
+      {
+        "hour": 9,
+        "minute": 33,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 9,
+        "minute": 47,
+        "type": "普通",
+        "dest": "久留米"
+      },
+      {
+        "hour": 9,
+        "minute": 50,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 9,
+        "minute": 56,
+        "type": "区間快速",
+        "dest": "二日市"
+      },
+      {
+        "hour": 10,
+        "minute": 3,
+        "type": "快速",
+        "dest": "博多"
+      },
+      {
+        "hour": 10,
+        "minute": 11,
+        "type": "普通",
+        "dest": "南福岡"
+      },
+      {
+        "hour": 10,
+        "minute": 15,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 10,
+        "minute": 19,
+        "type": "区間快速",
+        "dest": "羽犬塚"
+      },
+      {
+        "hour": 10,
+        "minute": 24,
+        "type": "快速",
+        "dest": "博多"
+      },
+      {
+        "hour": 10,
+        "minute": 32,
+        "type": "普通",
+        "dest": "荒木"
+      },
+      {
+        "hour": 10,
+        "minute": 46,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 10,
+        "minute": 50,
+        "type": "区間快速",
+        "dest": "羽犬塚"
+      },
+      {
+        "hour": 11,
+        "minute": 2,
+        "type": "普通",
+        "dest": "二日市"
+      },
+      {
+        "hour": 11,
+        "minute": 14,
+        "type": "快速",
+        "dest": "博多"
+      },
+      {
+        "hour": 11,
+        "minute": 20,
+        "type": "区間快速",
+        "dest": "鳥栖"
+      },
+      {
+        "hour": 11,
+        "minute": 29,
+        "type": "普通",
+        "dest": "二日市"
+      },
+      {
+        "hour": 11,
+        "minute": 38,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 11,
+        "minute": 42,
+        "type": "普通",
+        "dest": "久留米"
+      },
+      {
+        "hour": 11,
+        "minute": 56,
+        "type": "区間快速",
+        "dest": "博多"
+      },
+      {
+        "hour": 12,
+        "minute": 0,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 12,
+        "minute": 5,
+        "type": "普通",
+        "dest": "二日市"
+      },
+      {
+        "hour": 12,
+        "minute": 14,
+        "type": "快速",
+        "dest": "博多"
+      },
+      {
+        "hour": 12,
+        "minute": 22,
+        "type": "区間快速",
+        "dest": "鳥栖"
+      },
+      {
+        "hour": 12,
+        "minute": 31,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 12,
+        "minute": 36,
+        "type": "普通",
+        "dest": "二日市"
+      },
+      {
+        "hour": 12,
+        "minute": 52,
+        "type": "普通",
+        "dest": "久留米"
+      },
+      {
+        "hour": 12,
+        "minute": 55,
+        "type": "区間快速",
+        "dest": "羽犬塚"
+      },
+      {
+        "hour": 13,
+        "minute": 0,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 13,
+        "minute": 6,
+        "type": "普通",
+        "dest": "二日市"
+      },
+      {
+        "hour": 13,
+        "minute": 14,
+        "type": "快速",
+        "dest": "博多"
+      },
+      {
+        "hour": 13,
+        "minute": 22,
+        "type": "区間快速",
+        "dest": "鳥栖"
+      },
+      {
+        "hour": 13,
+        "minute": 31,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 13,
+        "minute": 35,
+        "type": "普通",
+        "dest": "二日市"
+      },
+      {
+        "hour": 13,
+        "minute": 52,
+        "type": "普通",
+        "dest": "久留米"
+      },
+      {
+        "hour": 13,
+        "minute": 55,
+        "type": "区間快速",
+        "dest": "羽犬塚"
+      },
+      {
+        "hour": 13,
+        "minute": 56,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 14,
+        "minute": 6,
+        "type": "普通",
+        "dest": "二日市"
+      },
+      {
+        "hour": 14,
+        "minute": 14,
+        "type": "快速",
+        "dest": "博多"
+      },
+      {
+        "hour": 14,
+        "minute": 20,
+        "type": "区間快速",
+        "dest": "鳥栖"
+      },
+      {
+        "hour": 14,
+        "minute": 31,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 14,
+        "minute": 34,
+        "type": "普通",
+        "dest": "二日市"
+      },
+      {
+        "hour": 14,
+        "minute": 52,
+        "type": "普通",
+        "dest": "久留米"
+      },
+      {
+        "hour": 14,
+        "minute": 55,
+        "type": "区間快速",
+        "dest": "羽犬塚"
+      },
+      {
+        "hour": 14,
+        "minute": 56,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 15,
+        "minute": 6,
+        "type": "普通",
+        "dest": "二日市"
+      },
+      {
+        "hour": 15,
+        "minute": 14,
+        "type": "快速",
+        "dest": "博多"
+      },
+      {
+        "hour": 15,
+        "minute": 20,
+        "type": "区間快速",
+        "dest": "鳥栖"
+      },
+      {
+        "hour": 15,
+        "minute": 31,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 15,
+        "minute": 33,
+        "type": "普通",
+        "dest": "鳥栖"
+      },
+      {
+        "hour": 15,
+        "minute": 55,
+        "type": "普通",
+        "dest": "鳥栖"
+      },
+      {
+        "hour": 15,
+        "minute": 57,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 15,
+        "minute": 58,
+        "type": "区間快速",
+        "dest": "二日市"
+      },
+      {
+        "hour": 16,
+        "minute": 6,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 16,
+        "minute": 14,
+        "type": "快速",
+        "dest": "博多"
+      },
+      {
+        "hour": 16,
+        "minute": 20,
+        "type": "区間快速",
+        "dest": "久留米"
+      },
+      {
+        "hour": 16,
+        "minute": 33,
+        "type": "普通",
+        "dest": "二日市"
+      },
+      {
+        "hour": 16,
+        "minute": 46,
+        "type": "普通",
+        "dest": "鳥栖"
+      },
+      {
+        "hour": 16,
+        "minute": 50,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 16,
+        "minute": 59,
+        "type": "区間快速",
+        "dest": "羽犬塚"
+      },
+      {
+        "hour": 17,
+        "minute": 1,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 17,
+        "minute": 7,
+        "type": "普通",
+        "dest": "荒木"
+      },
+      {
+        "hour": 17,
+        "minute": 12,
+        "type": "快速",
+        "dest": "博多"
+      },
+      {
+        "hour": 17,
+        "minute": 14,
+        "type": "快速",
+        "dest": "羽犬塚"
+      },
+      {
+        "hour": 17,
+        "minute": 19,
+        "type": "普通",
+        "dest": "鳥栖"
+      },
+      {
+        "hour": 17,
+        "minute": 25,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 17,
+        "minute": 31,
+        "type": "普通",
+        "dest": "南福岡"
+      },
+      {
+        "hour": 17,
+        "minute": 34,
+        "type": "普通",
+        "dest": "二日市"
+      },
+      {
+        "hour": 17,
+        "minute": 36,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 17,
+        "minute": 40,
+        "type": "普通",
+        "dest": "大牟田"
+      },
+      {
+        "hour": 17,
+        "minute": 46,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 17,
+        "minute": 49,
+        "type": "普通",
+        "dest": "早岐"
+      },
+      {
+        "hour": 17,
+        "minute": 56,
+        "type": "区間快速",
+        "dest": "久留米"
+      },
+      {
+        "hour": 17,
+        "minute": 58,
+        "type": "快速",
+        "dest": "博多"
+      },
+      {
+        "hour": 18,
+        "minute": 4,
+        "type": "普通",
+        "dest": "鳥栖"
+      },
+      {
+        "hour": 18,
+        "minute": 13,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 18,
+        "minute": 18,
+        "type": "快速",
+        "dest": "大牟田"
+      },
+      {
+        "hour": 18,
+        "minute": 26,
+        "type": "普通",
+        "dest": "鳥栖"
+      },
+      {
+        "hour": 18,
+        "minute": 34,
+        "type": "区間快速",
+        "dest": "羽犬塚"
+      },
+      {
+        "hour": 18,
+        "minute": 36,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 18,
+        "minute": 46,
+        "type": "普通",
+        "dest": "荒木"
+      },
+      {
+        "hour": 18,
+        "minute": 59,
+        "type": "区間快速",
+        "dest": "久留米"
+      },
+      {
+        "hour": 19,
+        "minute": 0,
+        "type": "快速",
+        "dest": "博多"
+      },
+      {
+        "hour": 19,
+        "minute": 8,
+        "type": "普通",
+        "dest": "鳥栖"
+      },
+      {
+        "hour": 19,
+        "minute": 12,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 19,
+        "minute": 18,
+        "type": "普通",
+        "dest": "鳥栖"
+      },
+      {
+        "hour": 19,
+        "minute": 22,
+        "type": "快速",
+        "dest": "荒尾(熊本県)"
+      },
+      {
+        "hour": 19,
+        "minute": 23,
+        "type": "快速",
+        "dest": "博多"
+      },
+      {
+        "hour": 19,
+        "minute": 34,
+        "type": "区間快速",
+        "dest": "久留米"
+      },
+      {
+        "hour": 19,
+        "minute": 36,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 19,
+        "minute": 44,
+        "type": "普通",
+        "dest": "久留米"
+      },
+      {
+        "hour": 19,
+        "minute": 47,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 19,
+        "minute": 55,
+        "type": "区間快速",
+        "dest": "荒尾(熊本県)"
+      },
+      {
+        "hour": 20,
+        "minute": 0,
+        "type": "快速",
+        "dest": "博多"
+      },
+      {
+        "hour": 20,
+        "minute": 7,
+        "type": "普通",
+        "dest": "鳥栖"
+      },
+      {
+        "hour": 20,
+        "minute": 12,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 20,
+        "minute": 17,
+        "type": "快速",
+        "dest": "羽犬塚"
+      },
+      {
+        "hour": 20,
+        "minute": 22,
+        "type": "快速",
+        "dest": "博多"
+      },
+      {
+        "hour": 20,
+        "minute": 31,
+        "type": "普通",
+        "dest": "二日市"
+      },
+      {
+        "hour": 20,
+        "minute": 38,
+        "type": "区間快速",
+        "dest": "荒木"
+      },
+      {
+        "hour": 20,
+        "minute": 43,
+        "type": "普通",
+        "dest": "鳥栖"
+      },
+      {
+        "hour": 20,
+        "minute": 51,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 21,
+        "minute": 0,
+        "type": "普通",
+        "dest": "早岐"
+      },
+      {
+        "hour": 21,
+        "minute": 4,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 21,
+        "minute": 9,
+        "type": "快速",
+        "dest": "荒木"
+      },
+      {
+        "hour": 21,
+        "minute": 15,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 21,
+        "minute": 17,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 21,
+        "minute": 23,
+        "type": "普通",
+        "dest": "二日市"
+      },
+      {
+        "hour": 21,
+        "minute": 33,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 21,
+        "minute": 40,
+        "type": "普通",
+        "dest": "羽犬塚"
+      },
+      {
+        "hour": 21,
+        "minute": 45,
+        "type": "快速",
+        "dest": "博多"
+      },
+      {
+        "hour": 21,
+        "minute": 47,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 21,
+        "minute": 56,
+        "type": "普通",
+        "dest": "江北(佐賀県)"
+      },
+      {
+        "hour": 22,
+        "minute": 4,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 22,
+        "minute": 16,
+        "type": "普通",
+        "dest": "久留米"
+      },
+      {
+        "hour": 22,
+        "minute": 20,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 22,
+        "minute": 38,
+        "type": "普通",
+        "dest": "二日市"
+      },
+      {
+        "hour": 22,
+        "minute": 45,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 22,
+        "minute": 46,
+        "type": "区間快速",
+        "dest": "荒尾(熊本県)"
+      },
+      {
+        "hour": 23,
+        "minute": 8,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 23,
+        "minute": 12,
+        "type": "普通",
+        "dest": "久留米"
+      },
+      {
+        "hour": 23,
+        "minute": 32,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 23,
+        "minute": 39,
+        "type": "普通",
+        "dest": "久留米"
+      },
+      {
+        "hour": 23,
+        "minute": 42,
+        "type": "普通",
+        "dest": "博多"
+      },
+      {
+        "hour": 24,
+        "minute": 12,
+        "type": "普通",
+        "dest": "南福岡"
+      }
+    ]
+  }
+}

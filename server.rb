@@ -202,6 +202,13 @@ class TrainApp
         end
     end
 
+    # Hakata schedule
+    if path == '/hakata_schedule.json'
+        if File.file?('./hakata_schedule.json')
+            return ServeFile('./hakata_schedule.json')
+        end
+    end
+
     [404, {'Content-Type' => 'text/plain'}, ['Not Found']]
   end
 
@@ -264,8 +271,8 @@ class TrainApp
     
     if !defined?($weather_cache) || $weather_cache.nil? || (current_time - $weather_last_fetch) > (30 * 60)
       begin
-        lat = 33.81
-        lon = 130.54
+        lat = 33.606
+        lon = 130.422
         uri = URI("https://api.open-meteo.com/v1/forecast?latitude=#{lat}&longitude=#{lon}&current=temperature_2m,weather_code&hourly=precipitation_probability&timezone=Asia/Tokyo&forecast_hours=1")
         
         # Use Net::HTTP for better reliability

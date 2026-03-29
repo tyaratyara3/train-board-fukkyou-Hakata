@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>教育大前駅 発車標</title>
+    <title>吉塚駅 発車標</title>
 
-    <link rel="stylesheet" href="style.css?v=112">
+    <link rel="stylesheet" href="style.css?v=116">
     <script>
         // Force refresh for older webviews if cached heavily
         if (window.location.search.indexOf('v=99') === -1) {
@@ -16,38 +16,77 @@
 </head>
 
 <body>
-    <div class="station-header">
-        <div class="weather" id="current-weather">--</div>
-        <h1>教育大前駅（博多方面）</h1>
-        <div class="clock" id="current-clock">--:--</div>
-    </div>
-
-    <div class="board-frame">
-        <div class="board-header">
-            <span class="col-type">種別</span>
-            <span class="col-time">時刻</span>
-            <span class="col-dest">行先</span>
-            <span class="col-status">状況</span>
+    <div class="board-page" id="page-takeshita">
+        <div class="station-header">
+            <div class="weather" id="current-weather">--</div>
+            <h1>吉塚駅（竹下方面）</h1>
+            <div class="clock" id="current-clock">--:--</div>
         </div>
 
-        <div id="departure-list" class="departure-list">
-            <!-- JavaScriptで動的に挿入 -->
-            <div class="loading">読込中...</div>
-        </div>
+        <div class="board-frame">
+            <div class="board-header">
+                <span class="col-type">種別</span>
+                <span class="col-time">時刻</span>
+                <span class="col-dest">行先</span>
+                <span class="col-status">状況</span>
+            </div>
 
-        <div class="scroll-message-container">
-            <div id="scroll-message" class="scroll-message">
-                只今の時間は平常通り運転しています。
+            <div id="departure-list" class="departure-list">
+                <!-- JavaScriptで動的に挿入 -->
+                <div class="loading">読込中...</div>
+            </div>
+
+            <div class="scroll-message-container">
+                <div id="scroll-message" class="scroll-message">
+                    只今の時間は平常通り運転しています。
+                </div>
             </div>
         </div>
+        
+        <div class="scroll-button" onclick="document.getElementById('page-hakata').scrollIntoView({behavior: 'smooth'})">
+            ▼ 博多方面への発車標を見る ▼
+        </div>
     </div>
+
+    <div class="board-page" id="page-hakata">
+        <div class="station-header">
+            <div class="weather" id="current-weather-hakata">--</div>
+            <h1>吉塚駅（博多方面）</h1>
+            <div class="clock" id="current-clock-hakata">--:--</div>
+        </div>
+
+        <div class="board-frame">
+            <div class="board-header">
+                <span class="col-type">種別</span>
+                <span class="col-time">時刻</span>
+                <span class="col-dest">行先</span>
+                <span class="col-status">状況</span>
+            </div>
+
+            <div id="hakata-departure-list" class="departure-list">
+                <!-- JavaScriptで動的に挿入 -->
+                <div class="loading">読込中...</div>
+            </div>
+
+            <div class="scroll-message-container">
+                <div id="scroll-message-hakata" class="scroll-message">
+                    只今の時間は平常通り運転しています。
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-button up" onclick="document.getElementById('page-takeshita').scrollIntoView({behavior: 'smooth'})">
+            ▲ 竹下方面への発車標へ戻る ▲
+        </div>
+    </div>
+
     <div id="last-updated" class="last-updated">更新待機中...</div>
     <div id="sleep-overlay" class="sleep-overlay hidden">
         <div id="sleep-msg">🌙 省電力モード中</div>
         <div id="sleep-clock">00:00</div>
     </div>
 
-    <script src="script.js?v=108"></script>
+    <script src="script.js?v=111"></script>
 </body>
 
 </html>

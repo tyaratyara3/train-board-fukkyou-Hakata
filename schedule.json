@@ -1,602 +1,698 @@
 {
-  "station": "教育大前",
-  "direction": "博多方面",
+  "station": "吉塚",
+  "direction": "竹下方面",
   "schedule": {
     "weekday": [
       {
         "hour": 5,
-        "minute": 31,
-        "dest": "博多",
+        "minute": 47,
+        "dest": "05:56着",
         "type": "普通"
       },
       {
-        "hour": 5,
+        "hour": 6,
         "minute": 59,
-        "dest": "博多",
-        "type": "普通"
-      },
-      {
-        "hour": 6,
-        "minute": 20,
-        "dest": "博多",
-        "type": "普通"
-      },
-      {
-        "hour": 6,
-        "minute": 41,
-        "dest": "二日市",
-        "type": "普通"
-      },
-      {
-        "hour": 6,
-        "minute": 51,
-        "dest": "久留米",
+        "dest": "07:08着",
         "type": "普通"
       },
       {
         "hour": 7,
-        "minute": 6,
-        "dest": "南福岡",
-        "type": "普通"
-      },
-      {
-        "hour": 7,
-        "minute": 24,
-        "dest": "久留米",
-        "type": "普通"
-      },
-      {
-        "hour": 7,
-        "minute": 36,
-        "dest": "南福岡",
-        "type": "普通"
-      },
-      {
-        "hour": 7,
-        "minute": 45,
-        "dest": "南福岡",
-        "type": "普通"
-      },
-      {
-        "hour": 7,
-        "minute": 55,
-        "dest": "二日市",
-        "type": "普通"
-      },
-      {
-        "hour": 8,
-        "minute": 6,
-        "dest": "鳥栖",
-        "type": "普通"
-      },
-      {
-        "hour": 8,
-        "minute": 26,
-        "dest": "南福岡",
-        "type": "普通"
-      },
-      {
-        "hour": 8,
-        "minute": 39,
-        "dest": "鳥栖",
-        "type": "区"
-      },
-      {
-        "hour": 8,
-        "minute": 52,
-        "dest": "鳥栖",
-        "type": "普通"
-      },
-      {
-        "hour": 9,
         "minute": 21,
-        "dest": "二日市",
-        "type": "区"
+        "dest": "07:28着",
+        "type": "普通"
+      },
+      {
+        "hour": 7,
+        "minute": 30,
+        "dest": "07:44着",
+        "type": "普通"
+      },
+      {
+        "hour": 7,
+        "minute": 44,
+        "dest": "08:02着",
+        "type": "普通"
+      },
+      {
+        "hour": 7,
+        "minute": 57,
+        "dest": "08:07着",
+        "type": "普通"
+      },
+      {
+        "hour": 8,
+        "minute": 1,
+        "dest": "08:13着",
+        "type": "普通"
+      },
+      {
+        "hour": 8,
+        "minute": 20,
+        "dest": "08:27着",
+        "type": "普通"
+      },
+      {
+        "hour": 8,
+        "minute": 23,
+        "dest": "08:31着",
+        "type": "普通"
+      },
+      {
+        "hour": 8,
+        "minute": 30,
+        "dest": "08:37着",
+        "type": "普通"
+      },
+      {
+        "hour": 8,
+        "minute": 44,
+        "dest": "08:52着",
+        "type": "普通"
+      },
+      {
+        "hour": 8,
+        "minute": 52,
+        "dest": "09:01着",
+        "type": "普通"
       },
       {
         "hour": 9,
-        "minute": 46,
-        "dest": "羽犬塚",
-        "type": "区"
+        "minute": 24,
+        "dest": "09:39着",
+        "type": "普通"
       },
       {
-        "hour": 10,
-        "minute": 17,
-        "dest": "二日市",
+        "hour": 9,
+        "minute": 51,
+        "dest": "10:12着",
         "type": "普通"
       },
       {
         "hour": 10,
-        "minute": 42,
-        "dest": "鳥栖",
-        "type": "区"
+        "minute": 6,
+        "dest": "10:22着",
+        "type": "普通"
       },
       {
-        "hour": 11,
-        "minute": 18,
-        "dest": "二日市",
+        "hour": 10,
+        "minute": 36,
+        "dest": "11:09着",
+        "type": "普通"
+      },
+      {
+        "hour": 10,
+        "minute": 51,
+        "dest": "11:09着",
         "type": "普通"
       },
       {
         "hour": 11,
-        "minute": 48,
-        "dest": "鳥栖",
-        "type": "区"
-      },
-      {
-        "hour": 12,
-        "minute": 14,
-        "dest": "二日市",
-        "type": "普通"
-      },
-      {
-        "hour": 12,
-        "minute": 47,
-        "dest": "鳥栖",
-        "type": "区"
-      },
-      {
-        "hour": 13,
-        "minute": 14,
-        "dest": "二日市",
-        "type": "普通"
-      },
-      {
-        "hour": 13,
-        "minute": 47,
-        "dest": "鳥栖",
-        "type": "区"
-      },
-      {
-        "hour": 14,
-        "minute": 14,
-        "dest": "二日市",
-        "type": "普通"
-      },
-      {
-        "hour": 14,
-        "minute": 47,
-        "dest": "鳥栖",
-        "type": "区"
-      },
-      {
-        "hour": 15,
-        "minute": 16,
-        "dest": "博多",
-        "type": "普通"
-      },
-      {
-        "hour": 15,
-        "minute": 47,
-        "dest": "久留米",
-        "type": "区"
-      },
-      {
-        "hour": 16,
-        "minute": 13,
-        "dest": "荒木",
-        "type": "普通"
-      },
-      {
-        "hour": 16,
-        "minute": 40,
-        "dest": "南福岡",
-        "type": "普通"
-      },
-      {
-        "hour": 16,
-        "minute": 54,
-        "dest": "大牟田",
-        "type": "普通"
-      },
-      {
-        "hour": 17,
-        "minute": 12,
-        "dest": "久留米",
-        "type": "区"
-      },
-      {
-        "hour": 17,
-        "minute": 52,
-        "dest": "羽犬塚",
-        "type": "区"
-      },
-      {
-        "hour": 18,
-        "minute": 16,
-        "dest": "久留米",
-        "type": "区"
-      },
-      {
-        "hour": 18,
-        "minute": 43,
-        "dest": "久留米",
-        "type": "区"
-      },
-      {
-        "hour": 19,
-        "minute": 13,
-        "dest": "荒尾",
-        "type": "区"
-      },
-      {
-        "hour": 19,
-        "minute": 40,
-        "dest": "二日市",
-        "type": "普通"
-      },
-      {
-        "hour": 19,
-        "minute": 59,
-        "dest": "荒木",
-        "type": "区"
-      },
-      {
-        "hour": 20,
-        "minute": 22,
-        "dest": "博多",
-        "type": "普通"
-      },
-      {
-        "hour": 20,
-        "minute": 42,
-        "dest": "二日市",
-        "type": "普通"
-      },
-      {
-        "hour": 21,
         "minute": 2,
-        "dest": "江北",
+        "dest": "11:09着",
         "type": "普通"
       },
       {
-        "hour": 21,
-        "minute": 27,
-        "dest": "久留米",
+        "hour": 11,
+        "minute": 29,
+        "dest": "11:36着",
         "type": "普通"
       },
       {
-        "hour": 21,
-        "minute": 48,
-        "dest": "二日市",
-        "type": "普通"
-      },
-      {
-        "hour": 22,
-        "minute": 10,
-        "dest": "荒尾",
-        "type": "区"
-      },
-      {
-        "hour": 22,
-        "minute": 25,
-        "dest": "久留米",
-        "type": "普通"
-      },
-      {
-        "hour": 22,
-        "minute": 52,
-        "dest": "久留米",
-        "type": "普通"
-      },
-      {
-        "hour": 23,
-        "minute": 8,
-        "dest": "福間",
-        "type": "普通"
-      },
-      {
-        "hour": 23,
-        "minute": 23,
-        "dest": "南福岡",
-        "type": "普通"
-      },
-      {
-        "hour": 23,
+        "hour": 11,
         "minute": 42,
-        "dest": "福間",
+        "dest": "11:50着",
+        "type": "普通"
+      },
+      {
+        "hour": 12,
+        "minute": 5,
+        "dest": "12:12着",
+        "type": "普通"
+      },
+      {
+        "hour": 12,
+        "minute": 36,
+        "dest": "12:47着",
+        "type": "普通"
+      },
+      {
+        "hour": 12,
+        "minute": 52,
+        "dest": "13:05着",
+        "type": "普通"
+      },
+      {
+        "hour": 13,
+        "minute": 6,
+        "dest": "13:17着",
+        "type": "普通"
+      },
+      {
+        "hour": 13,
+        "minute": 35,
+        "dest": "13:47着",
+        "type": "普通"
+      },
+      {
+        "hour": 13,
+        "minute": 52,
+        "dest": "14:05着",
+        "type": "普通"
+      },
+      {
+        "hour": 14,
+        "minute": 6,
+        "dest": "14:17着",
+        "type": "普通"
+      },
+      {
+        "hour": 14,
+        "minute": 34,
+        "dest": "14:44着",
+        "type": "普通"
+      },
+      {
+        "hour": 14,
+        "minute": 52,
+        "dest": "15:04着",
+        "type": "普通"
+      },
+      {
+        "hour": 15,
+        "minute": 6,
+        "dest": "15:17着",
+        "type": "普通"
+      },
+      {
+        "hour": 15,
+        "minute": 33,
+        "dest": "15:40着",
+        "type": "普通"
+      },
+      {
+        "hour": 15,
+        "minute": 55,
+        "dest": "16:01着",
+        "type": "普通"
+      },
+      {
+        "hour": 16,
+        "minute": 33,
+        "dest": "16:41着",
+        "type": "普通"
+      },
+      {
+        "hour": 16,
+        "minute": 46,
+        "dest": "16:58着",
+        "type": "普通"
+      },
+      {
+        "hour": 17,
+        "minute": 7,
+        "dest": "17:15着",
+        "type": "普通"
+      },
+      {
+        "hour": 17,
+        "minute": 19,
+        "dest": "17:29着",
+        "type": "普通"
+      },
+      {
+        "hour": 17,
+        "minute": 31,
+        "dest": "17:39着",
+        "type": "普通"
+      },
+      {
+        "hour": 17,
+        "minute": 34,
+        "dest": "17:42着",
+        "type": "普通"
+      },
+      {
+        "hour": 17,
+        "minute": 40,
+        "dest": "17:48着",
+        "type": "普通"
+      },
+      {
+        "hour": 17,
+        "minute": 49,
+        "dest": "17:57着",
+        "type": "普通"
+      },
+      {
+        "hour": 18,
+        "minute": 4,
+        "dest": "18:17着",
+        "type": "普通"
+      },
+      {
+        "hour": 18,
+        "minute": 26,
+        "dest": "18:36着",
+        "type": "普通"
+      },
+      {
+        "hour": 18,
+        "minute": 46,
+        "dest": "18:58着",
+        "type": "普通"
+      },
+      {
+        "hour": 19,
+        "minute": 8,
+        "dest": "19:19着",
+        "type": "普通"
+      },
+      {
+        "hour": 19,
+        "minute": 18,
+        "dest": "19:32着",
+        "type": "普通"
+      },
+      {
+        "hour": 19,
+        "minute": 44,
+        "dest": "19:57着",
+        "type": "普通"
+      },
+      {
+        "hour": 20,
+        "minute": 7,
+        "dest": "20:15着",
+        "type": "普通"
+      },
+      {
+        "hour": 20,
+        "minute": 31,
+        "dest": "20:39着",
+        "type": "普通"
+      },
+      {
+        "hour": 20,
+        "minute": 43,
+        "dest": "20:50着",
+        "type": "普通"
+      },
+      {
+        "hour": 21,
+        "minute": 0,
+        "dest": "21:08着",
+        "type": "普通"
+      },
+      {
+        "hour": 21,
+        "minute": 23,
+        "dest": "21:32着",
+        "type": "普通"
+      },
+      {
+        "hour": 21,
+        "minute": 40,
+        "dest": "21:47着",
+        "type": "普通"
+      },
+      {
+        "hour": 21,
+        "minute": 56,
+        "dest": "22:04着",
+        "type": "普通"
+      },
+      {
+        "hour": 22,
+        "minute": 16,
+        "dest": "22:24着",
+        "type": "普通"
+      },
+      {
+        "hour": 22,
+        "minute": 38,
+        "dest": "22:48着",
+        "type": "普通"
+      },
+      {
+        "hour": 23,
+        "minute": 12,
+        "dest": "23:19着",
+        "type": "普通"
+      },
+      {
+        "hour": 23,
+        "minute": 39,
+        "dest": "23:49着",
         "type": "普通"
       },
       {
         "hour": 24,
-        "minute": 5,
-        "dest": "赤間",
+        "minute": 12,
+        "dest": "00:19着",
         "type": "普通"
       }
     ],
     "holiday": [
       {
         "hour": 5,
-        "minute": 31,
-        "dest": "博多",
+        "minute": 47,
+        "dest": "05:56着",
         "type": "普通"
       },
       {
-        "hour": 5,
+        "hour": 6,
         "minute": 59,
-        "dest": "博多",
-        "type": "普通"
-      },
-      {
-        "hour": 6,
-        "minute": 20,
-        "dest": "博多",
-        "type": "普通"
-      },
-      {
-        "hour": 6,
-        "minute": 41,
-        "dest": "二日市",
-        "type": "普通"
-      },
-      {
-        "hour": 6,
-        "minute": 51,
-        "dest": "久留米",
+        "dest": "07:08着",
         "type": "普通"
       },
       {
         "hour": 7,
-        "minute": 6,
-        "dest": "南福岡",
-        "type": "普通"
-      },
-      {
-        "hour": 7,
-        "minute": 24,
-        "dest": "久留米",
-        "type": "普通"
-      },
-      {
-        "hour": 7,
-        "minute": 45,
-        "dest": "南福岡",
-        "type": "普通"
-      },
-      {
-        "hour": 7,
-        "minute": 55,
-        "dest": "二日市",
-        "type": "普通"
-      },
-      {
-        "hour": 8,
-        "minute": 6,
-        "dest": "鳥栖",
-        "type": "普通"
-      },
-      {
-        "hour": 8,
-        "minute": 26,
-        "dest": "南福岡",
-        "type": "普通"
-      },
-      {
-        "hour": 8,
-        "minute": 39,
-        "dest": "鳥栖",
-        "type": "区"
-      },
-      {
-        "hour": 8,
-        "minute": 52,
-        "dest": "鳥栖",
-        "type": "普通"
-      },
-      {
-        "hour": 9,
         "minute": 21,
-        "dest": "二日市",
-        "type": "区"
+        "dest": "07:28着",
+        "type": "普通"
+      },
+      {
+        "hour": 7,
+        "minute": 30,
+        "dest": "07:44着",
+        "type": "普通"
+      },
+      {
+        "hour": 7,
+        "minute": 44,
+        "dest": "08:02着",
+        "type": "普通"
+      },
+      {
+        "hour": 7,
+        "minute": 57,
+        "dest": "08:07着",
+        "type": "普通"
+      },
+      {
+        "hour": 8,
+        "minute": 1,
+        "dest": "08:13着",
+        "type": "普通"
+      },
+      {
+        "hour": 8,
+        "minute": 20,
+        "dest": "08:27着",
+        "type": "普通"
+      },
+      {
+        "hour": 8,
+        "minute": 30,
+        "dest": "08:37着",
+        "type": "普通"
+      },
+      {
+        "hour": 8,
+        "minute": 44,
+        "dest": "08:52着",
+        "type": "普通"
+      },
+      {
+        "hour": 8,
+        "minute": 52,
+        "dest": "09:01着",
+        "type": "普通"
       },
       {
         "hour": 9,
-        "minute": 46,
-        "dest": "羽犬塚",
-        "type": "区"
+        "minute": 24,
+        "dest": "09:39着",
+        "type": "普通"
       },
       {
-        "hour": 10,
-        "minute": 17,
-        "dest": "二日市",
+        "hour": 9,
+        "minute": 51,
+        "dest": "10:12着",
         "type": "普通"
       },
       {
         "hour": 10,
-        "minute": 42,
-        "dest": "鳥栖",
-        "type": "区"
+        "minute": 6,
+        "dest": "10:22着",
+        "type": "普通"
       },
       {
-        "hour": 11,
-        "minute": 18,
-        "dest": "二日市",
+        "hour": 10,
+        "minute": 36,
+        "dest": "11:09着",
+        "type": "普通"
+      },
+      {
+        "hour": 10,
+        "minute": 51,
+        "dest": "11:09着",
         "type": "普通"
       },
       {
         "hour": 11,
-        "minute": 48,
-        "dest": "鳥栖",
-        "type": "区"
-      },
-      {
-        "hour": 12,
-        "minute": 14,
-        "dest": "二日市",
-        "type": "普通"
-      },
-      {
-        "hour": 12,
-        "minute": 47,
-        "dest": "鳥栖",
-        "type": "区"
-      },
-      {
-        "hour": 13,
-        "minute": 14,
-        "dest": "二日市",
-        "type": "普通"
-      },
-      {
-        "hour": 13,
-        "minute": 47,
-        "dest": "鳥栖",
-        "type": "区"
-      },
-      {
-        "hour": 14,
-        "minute": 14,
-        "dest": "二日市",
-        "type": "普通"
-      },
-      {
-        "hour": 14,
-        "minute": 47,
-        "dest": "鳥栖",
-        "type": "区"
-      },
-      {
-        "hour": 15,
-        "minute": 16,
-        "dest": "博多",
-        "type": "普通"
-      },
-      {
-        "hour": 15,
-        "minute": 47,
-        "dest": "久留米",
-        "type": "区"
-      },
-      {
-        "hour": 16,
-        "minute": 13,
-        "dest": "荒木",
-        "type": "普通"
-      },
-      {
-        "hour": 16,
-        "minute": 40,
-        "dest": "南福岡",
-        "type": "普通"
-      },
-      {
-        "hour": 16,
-        "minute": 54,
-        "dest": "大牟田",
-        "type": "普通"
-      },
-      {
-        "hour": 17,
-        "minute": 12,
-        "dest": "久留米",
-        "type": "区"
-      },
-      {
-        "hour": 17,
-        "minute": 52,
-        "dest": "羽犬塚",
-        "type": "区"
-      },
-      {
-        "hour": 18,
-        "minute": 16,
-        "dest": "久留米",
-        "type": "区"
-      },
-      {
-        "hour": 18,
-        "minute": 43,
-        "dest": "久留米",
-        "type": "区"
-      },
-      {
-        "hour": 19,
-        "minute": 13,
-        "dest": "荒尾",
-        "type": "区"
-      },
-      {
-        "hour": 19,
-        "minute": 40,
-        "dest": "二日市",
-        "type": "普通"
-      },
-      {
-        "hour": 19,
-        "minute": 59,
-        "dest": "荒木",
-        "type": "区"
-      },
-      {
-        "hour": 20,
-        "minute": 22,
-        "dest": "博多",
-        "type": "普通"
-      },
-      {
-        "hour": 20,
-        "minute": 42,
-        "dest": "二日市",
-        "type": "普通"
-      },
-      {
-        "hour": 21,
         "minute": 2,
-        "dest": "江北",
+        "dest": "11:09着",
         "type": "普通"
       },
       {
-        "hour": 21,
-        "minute": 27,
-        "dest": "久留米",
+        "hour": 11,
+        "minute": 29,
+        "dest": "11:36着",
         "type": "普通"
       },
       {
-        "hour": 21,
-        "minute": 48,
-        "dest": "二日市",
-        "type": "普通"
-      },
-      {
-        "hour": 22,
-        "minute": 10,
-        "dest": "荒尾",
-        "type": "区"
-      },
-      {
-        "hour": 22,
-        "minute": 25,
-        "dest": "久留米",
-        "type": "普通"
-      },
-      {
-        "hour": 22,
-        "minute": 52,
-        "dest": "久留米",
-        "type": "普通"
-      },
-      {
-        "hour": 23,
-        "minute": 8,
-        "dest": "福間",
-        "type": "普通"
-      },
-      {
-        "hour": 23,
-        "minute": 23,
-        "dest": "南福岡",
-        "type": "普通"
-      },
-      {
-        "hour": 23,
+        "hour": 11,
         "minute": 42,
-        "dest": "福間",
+        "dest": "11:50着",
+        "type": "普通"
+      },
+      {
+        "hour": 12,
+        "minute": 5,
+        "dest": "12:12着",
+        "type": "普通"
+      },
+      {
+        "hour": 12,
+        "minute": 36,
+        "dest": "12:47着",
+        "type": "普通"
+      },
+      {
+        "hour": 12,
+        "minute": 52,
+        "dest": "13:05着",
+        "type": "普通"
+      },
+      {
+        "hour": 13,
+        "minute": 6,
+        "dest": "13:17着",
+        "type": "普通"
+      },
+      {
+        "hour": 13,
+        "minute": 35,
+        "dest": "13:47着",
+        "type": "普通"
+      },
+      {
+        "hour": 13,
+        "minute": 52,
+        "dest": "14:05着",
+        "type": "普通"
+      },
+      {
+        "hour": 14,
+        "minute": 6,
+        "dest": "14:17着",
+        "type": "普通"
+      },
+      {
+        "hour": 14,
+        "minute": 34,
+        "dest": "14:44着",
+        "type": "普通"
+      },
+      {
+        "hour": 14,
+        "minute": 52,
+        "dest": "15:04着",
+        "type": "普通"
+      },
+      {
+        "hour": 15,
+        "minute": 6,
+        "dest": "15:17着",
+        "type": "普通"
+      },
+      {
+        "hour": 15,
+        "minute": 33,
+        "dest": "15:40着",
+        "type": "普通"
+      },
+      {
+        "hour": 15,
+        "minute": 55,
+        "dest": "16:01着",
+        "type": "普通"
+      },
+      {
+        "hour": 16,
+        "minute": 33,
+        "dest": "16:41着",
+        "type": "普通"
+      },
+      {
+        "hour": 16,
+        "minute": 46,
+        "dest": "16:58着",
+        "type": "普通"
+      },
+      {
+        "hour": 17,
+        "minute": 7,
+        "dest": "17:15着",
+        "type": "普通"
+      },
+      {
+        "hour": 17,
+        "minute": 19,
+        "dest": "17:29着",
+        "type": "普通"
+      },
+      {
+        "hour": 17,
+        "minute": 31,
+        "dest": "17:39着",
+        "type": "普通"
+      },
+      {
+        "hour": 17,
+        "minute": 34,
+        "dest": "17:42着",
+        "type": "普通"
+      },
+      {
+        "hour": 17,
+        "minute": 40,
+        "dest": "17:48着",
+        "type": "普通"
+      },
+      {
+        "hour": 17,
+        "minute": 49,
+        "dest": "17:57着",
+        "type": "普通"
+      },
+      {
+        "hour": 18,
+        "minute": 4,
+        "dest": "18:17着",
+        "type": "普通"
+      },
+      {
+        "hour": 18,
+        "minute": 26,
+        "dest": "18:36着",
+        "type": "普通"
+      },
+      {
+        "hour": 18,
+        "minute": 46,
+        "dest": "18:58着",
+        "type": "普通"
+      },
+      {
+        "hour": 19,
+        "minute": 8,
+        "dest": "19:19着",
+        "type": "普通"
+      },
+      {
+        "hour": 19,
+        "minute": 18,
+        "dest": "19:32着",
+        "type": "普通"
+      },
+      {
+        "hour": 19,
+        "minute": 44,
+        "dest": "19:57着",
+        "type": "普通"
+      },
+      {
+        "hour": 20,
+        "minute": 7,
+        "dest": "20:15着",
+        "type": "普通"
+      },
+      {
+        "hour": 20,
+        "minute": 31,
+        "dest": "20:39着",
+        "type": "普通"
+      },
+      {
+        "hour": 20,
+        "minute": 43,
+        "dest": "20:50着",
+        "type": "普通"
+      },
+      {
+        "hour": 21,
+        "minute": 0,
+        "dest": "21:08着",
+        "type": "普通"
+      },
+      {
+        "hour": 21,
+        "minute": 23,
+        "dest": "21:32着",
+        "type": "普通"
+      },
+      {
+        "hour": 21,
+        "minute": 40,
+        "dest": "21:47着",
+        "type": "普通"
+      },
+      {
+        "hour": 21,
+        "minute": 56,
+        "dest": "22:04着",
+        "type": "普通"
+      },
+      {
+        "hour": 22,
+        "minute": 16,
+        "dest": "22:24着",
+        "type": "普通"
+      },
+      {
+        "hour": 22,
+        "minute": 38,
+        "dest": "22:48着",
+        "type": "普通"
+      },
+      {
+        "hour": 23,
+        "minute": 12,
+        "dest": "23:19着",
+        "type": "普通"
+      },
+      {
+        "hour": 23,
+        "minute": 39,
+        "dest": "23:49着",
         "type": "普通"
       },
       {
         "hour": 24,
-        "minute": 5,
-        "dest": "赤間",
+        "minute": 12,
+        "dest": "00:19着",
         "type": "普通"
       }
     ]
